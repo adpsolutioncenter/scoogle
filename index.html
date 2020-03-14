@@ -14,211 +14,208 @@
   
 <!-- Navbar Starts -->  
   <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Scoogle</a>
+  <a class="navbar-brand" href="#">SCOOGLE</a>
   </nav>
 <!-- navbar Ends -->
 
 <p></p>
 <p></p>
 
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Agency</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Custodial Parent</a>
-  </li>
-</ul>
-
-
-
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-
-<p></p>
-<p></p>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-  Step-1 Verification Questions  
-</button>
-
-<div>
-</div>
-
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-employee-tab" data-toggle="tab" href="#nav-employee" role="tab" aria-controls="nav-employee" aria-selected="true">Employee</a>
+    <a class="nav-item nav-link" id="nav-agency-tab" data-toggle="tab" href="#nav-agency" role="tab" aria-controls="nav-agency" aria-selected="false">Agency</a>
+    <a class="nav-item nav-link" id="nav-custodial-tab" data-toggle="tab" href="#nav-custodial" role="tab" aria-controls="nav-custodial" aria-selected="false">Custodial Parent</a>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
 <p></p>
 <p></p>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-  Step-2 Call Type 
-</button>
+  <!-- ====================================================================================Employee Content Starts =======================================================================================-->
+  <div class="tab-pane fade show active" id="nav-employee" role="tabpanel" aria-labelledby="nav-employee-tab">
+    <!-- Navbar with Nav Pills Starts -->
 
-<div class="container">
+<nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #283747;">
+  <span class="navbar-brand mb-0">Select Call Type |</span>
+  <ul class="navbar-nav nav nav-pills">
+    
+    <li class="nav-item active">
+      <a class="nav-link active" id="tab-deduction" data-toggle="tab" role="tab" href="#content-deduction" aria-selected="true" aria-controls="content-deduction">Deduction</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" id="tab-modification" data-toggle="tab" role="tab" href="#content-modification" aria-selected="false" aria-controls="content-modification">Modification</a>
+    </li>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalScrollableTitle">Verification Questions</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <ul>Employer Name - No Exception</ul>
-        <ul>Employee's First and Last Name - No Exception</ul>
-        <ul>Employees' complete SSN# - Exception is Last 4 of SSN</ul>
-        <ul>Associate ID (Home Depot) - Exception - Last Deducted Amount/Approximate last deducted amount/creditor info - Type of Garnishments</ul>
-        <ul>Note: If the caller is not completely verified then only provide limited info: 
-        a) Agency Contact Information 
-        b) Fax# and Mailing Address</ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
+    <li class="nav-item">
+      <a class="nav-link" id="tab-garnishment" data-toggle="tab" role="tab" href="#content-garnishment" aria-selected="false" aria-controls="content-garnishment">Garnishment Fax & Mail</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-neworder" data-toggle="tab" role="tab" href="#content-neworder" aria-selected="false" aria-controls="content-neworder">New Order</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-refund" data-toggle="tab" role="tab" href="#content-refund" aria-selected="false" aria-controls="content-refund">Refund</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-release" data-toggle="tab" role="tab" href="#content-release" aria-selected="false" aria-controls="content-release">Release</a>
+    </li>
+
+
+  </ul>
+</nav>
+<main role="main" class="container-full">
+  <div class="container-full">
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="content-deduction" aria-labelledby="tab-1" role="tabpanel">Deduction Content</div>
+      <div class="tab-pane fade" id="content-modification" aria-labelledby="tab-modification" role="tabpanel">Modification Content</div>
+      <div class="tab-pane fade" id="content-garnishment" aria-labelledby="tab-garnishment" role="tabpanel">Garnishment content</div>
+      <div class="tab-pane fade" id="content-neworder" aria-labelledby="tab-neworder" role="tabpanel">New Order content</div>
+      <div class="tab-pane fade" id="content-refund" aria-labelledby="tab-refund" role="tabpanel">Refund content</div>
+      <div class="tab-pane fade" id="content-release" aria-labelledby="tab-release" role="tabpanel">Release content</div>
     </div>
   </div>
-</div>
+</main>
+
+<!-- Navbar with Nav Pills Ends -->
+  </div>
+  <!-- ====================================================================================Employee Content Ends =======================================================================================-->
+
+
+
+  <!-- ====================================================================================Agency Content Starts =======================================================================================-->
+  <div class="tab-pane fade" id="nav-agency" role="tabpanel" aria-labelledby="nav-agency-tab">
+    
+<p></p>
+<p></p>
+    <!-- Navbar with Nav Pills Starts -->
+
+<nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #17202A;">
+  <span class="navbar-brand mb-0">Select Call Type |</span>
+  <ul class="navbar-nav nav nav-pills">
+    
+    <li class="nav-item active">
+      <a class="nav-link active" id="tab-agencydeduction" data-toggle="tab" role="tab" href="#content-agencydeduction" aria-selected="true" aria-controls="content-agencydeduction">Deduction</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" id="tab-notifications" data-toggle="tab" role="tab" href="#content-notifications" aria-selected="false" aria-controls="content-notifications">Notification</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-agencygarnishments" data-toggle="tab" role="tab" href="#content-agencygarnishments" aria-selected="false" aria-controls="content-agencygarnishments">Garnishment Fax & Mail</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-agencyneworder" data-toggle="tab" role="tab" href="#content-agencyneworder" aria-selected="false" aria-controls="content-agencyneworder">New Order</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-agencyrefund" data-toggle="tab" role="tab" href="#content-agencyrefund" aria-selected="false" aria-controls="content-agencyrefund">Refund</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-agencyrelease" data-toggle="tab" role="tab" href="#content-agencyrelease" aria-selected="false" aria-controls="content-agencyrelease">Release</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-agencyletter" data-toggle="tab" role="tab" href="#content-agencyletter" aria-selected="false" aria-controls="content-agencyletter">Letter</a>
+    </li>
+
+
+  </ul>
+</nav>
+<main role="main" class="container-full">
+  <div class="container-full">
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="content-agencydeduction" aria-labelledby="tab-1" role="tabpanel">Deduction Content</div>
+      <div class="tab-pane fade" id="content-notifications" aria-labelledby="tab-notifications" role="tabpanel">Notification Content</div>
+      <div class="tab-pane fade" id="content-agencygarnishments" aria-labelledby="tab-agencygarnishments" role="tabpanel">Garnishment content</div>
+      <div class="tab-pane fade" id="content-agencyneworder" aria-labelledby="tab-agencyneworder" role="tabpanel">New Order content</div>
+      <div class="tab-pane fade" id="content-agencyrefund" aria-labelledby="tab-agencyrefund" role="tabpanel">Refund content</div>
+      <div class="tab-pane fade" id="content-agencyrelease" aria-labelledby="tab-agencyrelease" role="tabpanel">Release content</div>
+      <div class="tab-pane fade" id="content-agencyletter" aria-labelledby="tab-agencyletter" role="tabpanel">Letter</div>
+    </div>
+  </div>
+</main>
+
+<!-- Navbar with Nav Pills Ends -->
+
+
+
+
+
+
+
+
+  </div>
+  <!-- ====================================================================================Agency Content Ends =======================================================================================-->
+
+
+
+
+  <!-- ====================================================================================Custodial Content Starts======================================================================================-->
+  <div class="tab-pane fade" id="nav-custodial" role="tabpanel" aria-labelledby="nav-custodial-tab">
+
 
 <p></p>
 <p></p>
-<p></p>
 
-<div class="alert alert-warning" role="alert">
-  <b>Step-2:</b> Select Call Type
+<!-- Navbar with Nav Pills Starts -->
+
+<nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #1B2631;">
+  <span class="navbar-brand mb-0">Select Call Type |</span>
+  <ul class="navbar-nav nav nav-pills">
+    
+    <li class="nav-item active">
+      <a class="nav-link active" id="tab-custodialdeduction" data-toggle="tab" role="tab" href="#content-custodialdeduction" aria-selected="true" aria-controls="content-custodialdeduction">Deduction</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-link" id="tab-modifications" data-toggle="tab" role="tab" href="#content-modifications" aria-selected="false" aria-controls="content-modifications">Modification</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-custodialgarnishments" data-toggle="tab" role="tab" href="#content-custodialgarnishments" aria-selected="false" aria-controls="content-custodialgarnishments">Garnishment Fax & Mail</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-custodialneworder" data-toggle="tab" role="tab" href="#content-custodialneworder" aria-selected="false" aria-controls="content-custodialneworder">New Order</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-custodialrefund" data-toggle="tab" role="tab" href="#content-custodialrefund" aria-selected="false" aria-controls="content-custodialrefund">Refund</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" id="tab-custodialrelease" data-toggle="tab" role="tab" href="#content-custodialrelease" aria-selected="false" aria-controls="content-custodialrelease">Release</a>
+    </li>
+
+
+
+  </ul>
+</nav>
+<main role="main" class="container-full">
+  <div class="container-full">
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="content-custodialdeduction" aria-labelledby="tab-1" role="tabpanel">Deduction Content</div>
+      <div class="tab-pane fade" id="content-modifications" aria-labelledby="tab-modifications" role="tabpanel">Modification Content</div>
+      <div class="tab-pane fade" id="content-custodialgarnishments" aria-labelledby="tab-custodialgarnishments" role="tabpanel">Garnishment content</div>
+      <div class="tab-pane fade" id="content-custodialneworder" aria-labelledby="tab-custodialneworder" role="tabpanel">New Order content</div>
+      <div class="tab-pane fade" id="content-custodialrefund" aria-labelledby="tab-custodialrefund" role="tabpanel">Refund content</div>
+      <div class="tab-pane fade" id="content-custodialrelease" aria-labelledby="tab-custodialrelease" role="tabpanel">Release content</div>
+     </div>
+  </div>
+</main>
+
+<!-- Navbar with Nav Pills Ends -->
+
+  </div>
+  <!-- ====================================================================================Custodial Content Ends =======================================================================================-->
 </div>
-<!-- Deduction Starts -->
-<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="deduction">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Deduction
-        </button>
-      </h2>
-    </div>
-
-    <div id="collapseOne" class="collapse" aria-labelledby="deduction" data-parent="#accordionExample">
-      <div class="card-body">
-<!-- Nav Pills Start -->   
-
-<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Bankruptcy</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Child Support</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Federal Tax Levy</a>
-  </li>
-</ul>
-<div class="tab-content" id="pills-tabContent">
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-
-
-  </div>
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-</div>
-
-
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-  </div>
-</div>
-<!-- Nav Pills Ends -->   
-
-
-      </div>
-    </div>
-  </div>
-<!-- Deduction Ends -->
-
-  <div class="card">
-    <div class="card-header" id="modification">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Modification
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="modification" data-parent="#accordionExample">
-      <div class="card-body">
-        ...
-      </div>
-    </div>
-  </div>
-
-
-  <div class="card">
-    <div class="card-header" id="neworder">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          New Order
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="neworder" data-parent="#accordionExample">
-      <div class="card-body">
-        ...
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header" id="refund">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapserefund" aria-expanded="true" aria-controls="collapserefund">
-          Refund
-        </button>
-      </h2>
-    </div>
-
-    <div id="collapserefund" class="collapse" aria-labelledby="refund" data-parent="#accordionExample">
-      <div class="card-body">
-        ...
-      </div>
-    </div>
-  </div>
-
-
-  <div class="card">
-    <div class="card-header" id="release">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapserelease" aria-expanded="true" aria-controls="collapserelease">
-          Release
-        </button>
-      </h2>
-    </div>
-
-    <div id="collapserelease" class="collapse" aria-labelledby="release" data-parent="#accordionExample">
-      <div class="card-body">
-        ...
-      </div>
-    </div>
-  </div>
-
-
-</div>
-</div>
-
-
-
-
-
-  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-</div>
-
 
 
 
