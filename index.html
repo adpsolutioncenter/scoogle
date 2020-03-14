@@ -34,9 +34,57 @@
 
   <!-- ====================================================================================Employee Content Starts =======================================================================================-->
   <div class="tab-pane fade show active" id="nav-employee" role="tabpanel" aria-labelledby="nav-employee-tab">
-    <!-- Navbar with Nav Pills Starts -->
 
+<!-- Employee Verification Questions -->
+<span class="badge badge-pill badge-danger">Step-1</span>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#employeeModalCenter">
+  Employee Verification Questions
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="employeeModalCenter" tabindex="-1" role="dialog" aria-labelledby="employeeModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="employeeModalCenterTitle">Employee Verification Questions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<ol>
+  <li>Employer Name  - No exception</li>
+  <p></p>
+  <li>Employee’s First and Last Name  - No exception</li>
+  <p></p>
+  <li>Employee’s complete SSN# - Exception is Last 4 of SSN</li>
+  <p></p>
+  <li>Associate ID (Home Depot) -  Exception is Last 4 of SSN</li>
+  <p></p>
+  <li>Case ID -  Exception - Last Deducted amount/ Approximate last deducted amount / Creditor Info - Type of garnishment</li>
+  <p></p>
+  <b>Note: If the caller is not completely verified then only provide limited info : 
+    <div>a) Agency Contact information</div>  
+    <div>b) Fax# & mailing address</b></div>
+</ol>        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- Employee Verification Questions -->
+
+
+<p></p>
+<p></p>
+
+    <!-- Navbar with Nav Pills Starts -->
 <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #283747;">
+<span class="badge badge-pill badge-danger">Step-2</span> &nbsp;&nbsp;
   <span class="navbar-brand mb-0">Select Call Type |</span>
   <ul class="navbar-nav nav nav-pills">
     
@@ -91,9 +139,56 @@
     
 <p></p>
 <p></p>
+
+<!-- agency Verification Questions -->
+<span class="badge badge-pill badge-danger">Step-1</span>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#agencyModalCenter">
+  Agency Verification Questions
+</button>
+
+<p></p>
+<p></p>
+<!-- Modal -->
+<div class="modal fade" id="agencyModalCenter" tabindex="-1" role="dialog" aria-labelledby="agencyModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="agencyModalCenterTitle">Agency Verification Questions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<ol>
+  <li>Employer Name  - No exception</li>
+  <p></p>
+  <li>Employee’s First and Last Name  - No exception</li>
+  <p></p>
+  <li>Employee’s complete SSN# - Exception is Last 4 of SSN, If no last 4 of SSN then Payee Name & Total Goal Amount</li>
+  <p></p>
+  <li>Case ID -  No Exception</li>
+  <p></p>
+  <li>For Bankruptcy Trustee or Attorney - Bankruptcy Case ID  listed in PACER or the current active case ID is mandate</li>
+  <p></p>
+  <b>Note: If the caller is not completely verified then only provide limited info : 
+    <div>a) Agency Contact information</div>  
+    <div>b) Fax# & mailing address</b></div>
+</ol>        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- agency Verification Questions -->
+
     <!-- Navbar with Nav Pills Starts -->
 
 <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #17202A;">
+  <span class="badge badge-pill badge-danger">Step-2</span> &nbsp;&nbsp;
   <span class="navbar-brand mb-0">Select Call Type |</span>
   <ul class="navbar-nav nav nav-pills">
     
@@ -164,9 +259,55 @@
 <p></p>
 <p></p>
 
+<!-- custodial Verification Questions -->
+<span class="badge badge-pill badge-danger">Step-1</span>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#custodialModalCenter">
+  Custodial Verification Questions
+</button>
+
+<p></p>
+<p></p>
+<!-- Modal -->
+<div class="modal fade" id="custodialModalCenter" tabindex="-1" role="dialog" aria-labelledby="custodialModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="custodialModalCenterTitle">Custodial Verification Questions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<ol>
+  <li>Employer Name  - No exception</li>
+  <p></p>
+  <li>Employee’s First and Last Name  - No exception</li>
+  <p></p>
+  <li>Employee’s complete SSN# - Exception is Last 4 of SSN, If no last 4 digits of SSN then the Case ID is mandate.</li>
+  <p></p>
+  <li>Case ID -  No Exception</li>
+  <p></p>
+  <li>Caller's Name & Phone# - CP or Ex-spouse</li>
+  <p></p>
+  <b>Note: If the caller is not completely verified then only provide limited info : 
+    <div>a) custodial Contact information</div>  
+    <div>b) Fax# & mailing address</b></div>
+</ol>        
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- custodial Verification Questions -->
+
 <!-- Navbar with Nav Pills Starts -->
 
 <nav class="navbar navbar-dark navbar-expand-sm" style="background-color: #1B2631;">
+  <span class="badge badge-pill badge-danger">Step-2</span> &nbsp;&nbsp;
   <span class="navbar-brand mb-0">Select Call Type |</span>
   <ul class="navbar-nav nav nav-pills">
     
