@@ -20,7 +20,7 @@
 
 <p></p>
 <p></p>
-
+<marquee behavior="scroll" direction="left"><b>Welcome to SCOOGLE! This Page is under construction</b></marquee>
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-employee-tab" data-toggle="tab" href="#nav-employee" role="tab" aria-controls="nav-employee" aria-selected="true">Employee</a>
@@ -2306,15 +2306,1128 @@
     </div>
   </div>
 </div>
-
+</div>
 
 
 <!--===================================================================Modification Content Ends================================================================================================ -->
-<!--===================================================================Modification Content Ends================================================================================================ -->
-
+<!--===================================================================Garnishment Fax and Email Content Starts ===================================================================================== -->
+<div class="tab-pane fade" id="content-garnishment" aria-labelledby="tab-garnishment" role="tabpanel">
+<p></p>  
+<div class="row">
+  <div class="col-2">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-GF1-tab" data-toggle="pill" href="#v-pills-GF1" role="tab" aria-controls="v-pills-GF1" aria-selected="true">Bankruptcy</a>
+      <a class="nav-link" id="v-pills-GF2-tab" data-toggle="pill" href="#v-pills-GF2" role="tab" aria-controls="v-pills-GF2" aria-selected="false">Child Support</a>
+      <a class="nav-link" id="v-pills-GF3-tab" data-toggle="pill" href="#v-pills-GF3" role="tab" aria-controls="v-pills-GF3" aria-selected="false">Federal Tax Levy</a>
+      <a class="nav-link" id="v-pills-GF4-tab" data-toggle="pill" href="#v-pills-GF4" role="tab" aria-controls="v-pills-GF4" aria-selected="false">Spousal Support</a>
+      <a class="nav-link" id="v-pills-GF5-tab" data-toggle="pill" href="#v-pills-GF5" role="tab" aria-controls="v-pills-GF5" aria-selected="false">State Tax Levy</a>
+      <a class="nav-link" id="v-pills-GF6-tab" data-toggle="pill" href="#v-pills-GF6" role="tab" aria-controls="v-pills-GF6" aria-selected="false">Student Loan</a>
+      <a class="nav-link" id="v-pills-GF7-tab" data-toggle="pill" href="#v-pills-GF7" role="tab" aria-controls="v-pills-GF7" aria-selected="false">Writ</a>
     </div>
-      <div class="tab-pane fade" id="content-garnishment" aria-labelledby="tab-garnishment" role="tabpanel">Garnishment content</div>
-      <div class="tab-pane fade" id="content-neworder" aria-labelledby="tab-neworder" role="tabpanel">New Order content</div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+  <!--GF Bankruptcy Starts-->
+      <div class="tab-pane fade show active" id="v-pills-GF1" role="tabpanel" aria-labelledby="v-pills-GF1-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading107">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse107" aria-expanded="false" aria-controls="collapse107">
+          If caller with a money movement is inquiring on getting a Fax# to send the Order / Order status (including modification & Release)/Notifications/Balance update. How do we handle?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse107" class="collapse" aria-labelledby="heading107" data-parent="#accordionExample">
+      <div class="card-body">
+
+     <p><b>Who are Money Movement Client's ?</b></p>
+      <p><b>Ans.</b> They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
+      <p><b>Path:</b> GCPI -> Client Profile-> Contacts -> Contact Information</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="heading108">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse108" aria-expanded="false" aria-controls="collapse108">
+          Which address do we provide to the callers when they want to mail out any document only to ADP?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse108" class="collapse" aria-labelledby="heading108" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Address</div>
+          <div class="card-body">
+            <h5 class="card-title">ADP Wage Garnishments</h5>
+            <p class="card-text">Mail Stop 001</p>
+            <p class="card-text">2205 Enterprise Dr.</p>
+            <p class="card-text">Florence, SC - 29501</p>
+          </div>
+        </div>
+            <div class="alert alert-warning" role="alert">
+              <b>Note:</b> This address is only for the orders to be mailed to ADP & not for any checks. Checks are to be sent or returned to PO Box 221230, EL Paso TX - 79912
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading109">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse109" aria-expanded="false" aria-controls="collapse109">
+          What should we do, when caller is requesting for the document to be mailed?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse109" class="collapse" aria-labelledby="heading109" data-parent="#accordionExample">
+      <div class="card-body">
+        <p>For outbound mailing request managers Approval is must – outbound mailing request to be the last option if caller does not have access to MYADP, website or fax</p>
+        <p>Create a child SR for outbound mailing request – mask SSN and attach doc in SD tab assign it to<b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+        <p>Outbound Mailing Request queue: <b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <!--GF Bankruptcy Ends-->
+<!--GF Child Support Starts-->
+<div class="tab-pane fade" id="v-pills-GF2" role="tabpanel" aria-labelledby="v-pills-GF2-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading110">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse110" aria-expanded="false" aria-controls="collapse110">
+          If caller with a money movement is Inquiring on getting a fax# to send the order / Order status (including modification & Release)/Notifications/ Balance update. How do we handle?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse110" class="collapse" aria-labelledby="heading110" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+      <p><b>Who are Money Movement Client's?</b></p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
+      <p><b>Path:</b> GCPI -> Client Profile-> Contacts -> Contact Information</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="heading111">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse111" aria-expanded="false" aria-controls="collapse111">
+          Which address do we provide to the callers when they want to mail out any document only to ADP?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse111" class="collapse" aria-labelledby="heading111" data-parent="#accordionExample">
+      <div class="card-body">
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Address</div>
+          <div class="card-body">
+            <h5 class="card-title">ADP Wage Garnishments</h5>
+            <p class="card-text">Mail Stop 001</p>
+            <p class="card-text">2205 Enterprise Dr.</p>
+            <p class="card-text">Florence, SC - 29501</p>
+          </div>
+        </div>
+            <div class="alert alert-warning" role="alert">
+              <b>Note:</b> This address is only for the orders to be mailed to ADP & not for any checks. Checks are to be sent or returned to PO Box 221230, EL Paso TX - 79912
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading112">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse112" aria-expanded="false" aria-controls="collapse112">
+          What should we do, when caller is requesting for the document to be mailed?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse112" class="collapse" aria-labelledby="heading112" data-parent="#accordionExample">
+      <div class="card-body">
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+        <p>For outbound mailing request managers Approval is must – outbound mailing request to be the last option if caller does not have access to MYADP, website or fax</p>
+        <p>Create a child SR for outbound mailing request – mask SSN and attach doc in SD tab assign it to<b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+        <p>Outbound Mailing Request queue: <b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--GF Child Support Ends-->
+<!--GF Federal Tax Levy starts-->
+<div class="tab-pane fade" id="v-pills-GF3" role="tabpanel" aria-labelledby="v-pills-GF3-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading113">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse113" aria-expanded="false" aria-controls="collapse113">
+          If caller with a money movement is Inquiring on getting a fax# to send the order / Order status (including modification & Release)/Notifications/ Balance update. How do we handle?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse113" class="collapse" aria-labelledby="heading113" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+      <p><b>Who are Money Movement Client's?</b></p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
+      <p><b>Path:</b> GCPI -> Client Profile-> Contacts -> Contact Information</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="heading114">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse114" aria-expanded="false" aria-controls="collapse114">
+          Which address do we provide to the callers when they want to mail out any document only to ADP?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse114" class="collapse" aria-labelledby="heading114" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+        <p></p>
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Address</div>
+          <div class="card-body">
+            <h5 class="card-title">ADP Wage Garnishments</h5>
+            <p class="card-text">Mail Stop 001</p>
+            <p class="card-text">2205 Enterprise Dr.</p>
+            <p class="card-text">Florence, SC - 29501</p>
+          </div>
+        </div>
+            <div class="alert alert-warning" role="alert">
+              <b>Note:</b> This address is only for the orders to be mailed to ADP & not for any checks. Checks are to be sent or returned to PO Box 221230, EL Paso TX - 79912
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading115">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse115" aria-expanded="false" aria-controls="collapse115">
+          What should we do, when caller is requesting for the document to be mailed?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse115" class="collapse" aria-labelledby="heading115" data-parent="#accordionExample">
+      <div class="card-body">
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+        <p>For outbound mailing request managers Approval is must – outbound mailing request to be the last option if caller does not have access to MYADP, website or fax</p>
+        <p>Create a child SR for outbound mailing request – mask SSN and attach doc in SD tab assign it to<b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+        <p>Outbound Mailing Request queue: <b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--GF Federal Tax Levy Ends-->
+<!--GF Spousal Support Starts-->
+<div class="tab-pane fade" id="v-pills-GF4" role="tabpanel" aria-labelledby="v-pills-GF4-tab">
+  <div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading116">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse116" aria-expanded="false" aria-controls="collapse116">
+          If caller with a money movement is Inquiring on getting a fax# to send the order / Order status (including modification & Release)/Notifications/ Balance update. How do we handle?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse116" class="collapse" aria-labelledby="heading116" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+      <p><b>Who are Money Movement Client's?</b></p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
+      <p><b>Path:</b> GCPI -> Client Profile-> Contacts -> Contact Information</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="heading117">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse117" aria-expanded="false" aria-controls="collapse117">
+          Which address do we provide to the callers when they want to mail out any document only to ADP?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse117" class="collapse" aria-labelledby="heading117" data-parent="#accordionExample">
+      <div class="card-body">
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Address</div>
+          <div class="card-body">
+            <h5 class="card-title">ADP Wage Garnishments</h5>
+            <p class="card-text">Mail Stop 001</p>
+            <p class="card-text">2205 Enterprise Dr.</p>
+            <p class="card-text">Florence, SC - 29501</p>
+          </div>
+        </div>
+            <div class="alert alert-warning" role="alert">
+              <b>Note:</b> This address is only for the orders to be mailed to ADP & not for any checks. Checks are to be sent or returned to PO Box 221230, EL Paso TX - 79912
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading118">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse118" aria-expanded="false" aria-controls="collapse118">
+          What should we do, when caller is requesting for the document to be mailed?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse118" class="collapse" aria-labelledby="heading118" data-parent="#accordionExample">
+      <div class="card-body">
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+        <p>For outbound mailing request managers Approval is must – outbound mailing request to be the last option if caller does not have access to MYADP, website or fax</p>
+        <p>Create a child SR for outbound mailing request – mask SSN and attach doc in SD tab assign it to<b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+        <p>Outbound Mailing Request queue: <b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--GF Spousal Support Ends--> 
+<!--GF State Tax Levy Starts--> 
+<div class="tab-pane fade" id="v-pills-GF5" role="tabpanel" aria-labelledby="v-pills-GF5-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading119">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse119" aria-expanded="false" aria-controls="collapse119">
+          If caller with a money movement is Inquiring on getting a fax# to send the order / Order status (including modification & Release)/Notifications/ Balance update. How do we handle?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse119" class="collapse" aria-labelledby="heading119" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+      <p><b>Who are Money Movement Client's?</b></p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
+      <p><b>Path:</b> GCPI -> Client Profile-> Contacts -> Contact Information</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="heading120">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse120" aria-expanded="false" aria-controls="collapse120">
+          Which address do we provide to the callers when they want to mail out any document only to ADP?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse120" class="collapse" aria-labelledby="heading120" data-parent="#accordionExample">
+      <div class="card-body">
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Address</div>
+          <div class="card-body">
+            <h5 class="card-title">ADP Wage Garnishments</h5>
+            <p class="card-text">Mail Stop 001</p>
+            <p class="card-text">2205 Enterprise Dr.</p>
+            <p class="card-text">Florence, SC - 29501</p>
+          </div>
+        </div>
+            <div class="alert alert-warning" role="alert">
+              <b>Note:</b> This address is only for the orders to be mailed to ADP & not for any checks. Checks are to be sent or returned to PO Box 221230, EL Paso TX - 79912
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading121">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse121" aria-expanded="false" aria-controls="collapse121">
+          What should we do, when caller is requesting for the document to be mailed?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse121" class="collapse" aria-labelledby="heading121" data-parent="#accordionExample">
+      <div class="card-body">
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+        <p>For outbound mailing request managers Approval is must – outbound mailing request to be the last option if caller does not have access to MYADP, website or fax</p>
+        <p>Create a child SR for outbound mailing request – mask SSN and attach doc in SD tab assign it to<b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+        <p>Outbound Mailing Request queue: <b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--GF State Tax Levy Ends--> 
+<!--GF State Student Loan Ends--> 
+<div class="tab-pane fade" id="v-pills-GF6" role="tabpanel" aria-labelledby="v-pills-GF6-tab">
+
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading122">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse122" aria-expanded="false" aria-controls="collapse122">
+          If caller with a money movement is Inquiring on getting a fax# to send the order / Order status (including modification & Release)/Notifications/ Balance update. How do we handle?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse122" class="collapse" aria-labelledby="heading122" data-parent="#accordionExample">
+      <div class="card-body">
+
+  <div class="alert alert-success" role="alert">
+  Applicable for <b>Federal</b> and <b>All States</b>
+  </div>
+      <p></p>
+      <p><b>Who are Money Movement Client's?</b></p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
+      <p><b>Path:</b> GCPI -> Client Profile-> Contacts -> Contact Information</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="heading123">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse123" aria-expanded="false" aria-controls="collapse123">
+          Which address do we provide to the callers when they want to mail out any document only to ADP?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse123" class="collapse" aria-labelledby="heading123" data-parent="#accordionExample">
+      <div class="card-body">
+          <div class="alert alert-success" role="alert">
+          Applicable for <b>Federal</b> and <b>All States</b>
+          </div>
+      <p></p>
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Address</div>
+          <div class="card-body">
+            <h5 class="card-title">ADP Wage Garnishments</h5>
+            <p class="card-text">Mail Stop 001</p>
+            <p class="card-text">2205 Enterprise Dr.</p>
+            <p class="card-text">Florence, SC - 29501</p>
+          </div>
+        </div>
+            <div class="alert alert-warning" role="alert">
+              <b>Note:</b> This address is only for the orders to be mailed to ADP & not for any checks. Checks are to be sent or returned to PO Box 221230, EL Paso TX - 79912
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading124">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse124" aria-expanded="false" aria-controls="collapse124">
+          What should we do, when caller is requesting for the document to be mailed?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse124" class="collapse" aria-labelledby="heading124" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="alert alert-success" role="alert">
+        Applicable for <b>Federal</b> and <b>All States</b>
+        </div>
+      <p></p>
+        <p>For outbound mailing request managers Approval is must – outbound mailing request to be the last option if caller does not have access to MYADP, website or fax</p>
+        <p>Create a child SR for outbound mailing request – mask SSN and attach doc in SD tab assign it to<b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+        <p>Outbound Mailing Request queue: <b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--GF State Student Loan Ends--> 
+<div class="tab-pane fade" id="v-pills-GF7" role="tabpanel" aria-labelledby="v-pills-GF7-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading125">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse125" aria-expanded="false" aria-controls="collapse125">
+          If caller with a money movement is Inquiring on getting a fax# to send the order / Order status (including modification & Release)/Notifications/ Balance update. How do we handle?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse125" class="collapse" aria-labelledby="heading125" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+      <p><b>Who are Money Movement Client's?</b></p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
+      <p><b>Path:</b> GCPI -> Client Profile-> Contacts -> Contact Information</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="heading126">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse126" aria-expanded="false" aria-controls="collapse126">
+          Which address do we provide to the callers when they want to mail out any document only to ADP?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse126" class="collapse" aria-labelledby="heading126" data-parent="#accordionExample">
+      <div class="card-body">
+          <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+        <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+          <div class="card-header">Address</div>
+          <div class="card-body">
+            <h5 class="card-title">ADP Wage Garnishments</h5>
+            <p class="card-text">Mail Stop 001</p>
+            <p class="card-text">2205 Enterprise Dr.</p>
+            <p class="card-text">Florence, SC - 29501</p>
+          </div>
+        </div>
+            <div class="alert alert-warning" role="alert">
+              <b>Note:</b> This address is only for the orders to be mailed to ADP & not for any checks. Checks are to be sent or returned to PO Box 221230, EL Paso TX - 79912
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading127">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse127" aria-expanded="false" aria-controls="collapse127">
+          What should we do, when caller is requesting for the document to be mailed?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse127" class="collapse" aria-labelledby="heading127" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
+      <p></p>
+        <p>For outbound mailing request managers Approval is must – outbound mailing request to be the last option if caller does not have access to MYADP, website or fax</p>
+        <p>Create a child SR for outbound mailing request – mask SSN and attach doc in SD tab assign it to<b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+        <p>Outbound Mailing Request queue: <b>-PYMT-AND-COMPL-WG-MAIL</b></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><!--Last Div for Garnishment and Fax Content-->
+<!--===================================================================Garnishment Fax and Email Content Ends ===================================================================================== -->
+<!--===================================================================New Order Content Ends ===================================================================================== -->
+<div class="tab-pane fade" id="content-neworder" aria-labelledby="tab-neworder" role="tabpanel">
+  <p></p>
+<div class="row">
+  <div class="col-2">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-NO1-tab" data-toggle="pill" href="#v-pills-NO1" role="tab" aria-controls="v-pills-NO1" aria-selected="true">Bankruptcy</a>
+      <a class="nav-link" id="v-pills-NO2-tab" data-toggle="pill" href="#v-pills-NO2" role="tab" aria-controls="v-pills-NO2" aria-selected="false">Child Support</a>
+      <a class="nav-link" id="v-pills-NO3-tab" data-toggle="pill" href="#v-pills-NO3" role="tab" aria-controls="v-pills-NO3" aria-selected="false">Federal Tax Levy</a>
+      <a class="nav-link" id="v-pills-NO4-tab" data-toggle="pill" href="#v-pills-NO4" role="tab" aria-controls="v-pills-NO4" aria-selected="false">Spousal Support</a>
+      <a class="nav-link" id="v-pills-NO5-tab" data-toggle="pill" href="#v-pills-NO5" role="tab" aria-controls="v-pills-NO5" aria-selected="false">State Tax Levy</a>
+      <a class="nav-link" id="v-pills-NO6-tab" data-toggle="pill" href="#v-pills-NO6" role="tab" aria-controls="v-pills-NO6" aria-selected="false">Student Loan</a>
+      <a class="nav-link" id="v-pills-NO7-tab" data-toggle="pill" href="#v-pills-NO7" role="tab" aria-controls="v-pills-NO7" aria-selected="false">Wage Assignment</a>
+      <a class="nav-link" id="v-pills-NO8-tab" data-toggle="pill" href="#v-pills-NO8" role="tab" aria-controls="v-pills-NO8" aria-selected="false">Writ</a>
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+
+<div class="tab-pane fade show active" id="v-pills-NO1" role="tabpanel" aria-labelledby="v-pills-NO1-tab">
+
+<!--Bankrputcy Content Starts-->
+  <div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading128">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse128" aria-expanded="false" aria-controls="collapse128">
+          Caller inquired on the order status and it is deleted status ( wondering why order was not set up) ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse128" class="collapse" aria-labelledby="heading128" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Check the delete code in the comment on IR  box to understand the reason for delete and accordingly advise the caller</p>
+      <p>2. If it is listed as Hand To Do <b>(HTD)</b> which means callers needs to call WMT1 payroll. Client handles that particular order in house because of non availability of sort code <b>(this is for WMT1 only)</b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading129">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse129" aria-expanded="false" aria-controls="collapse129">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse129" class="collapse" aria-labelledby="heading129" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+        <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading130">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse130" aria-expanded="false" aria-controls="collapse130">
+          What number do we provide for a WGPS client, if an Employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse130" class="collapse" aria-labelledby="heading130" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+        <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+        <p><a href="https://adpworks.jiveon.com/community/service-411" class="badge badge-warning">WGPS Link</a></p>
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!--Bankrputcy Content Starts-->
+<!--Child Support Content Starts-->
+<div class="tab-pane fade" id="v-pills-NO2" role="tabpanel" aria-labelledby="v-pills-NO2-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading131">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse131" aria-expanded="false" aria-controls="collapse131">
+          Caller inquired on the order status and it is deleted status ( wondering why order was not set up) ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse131" class="collapse" aria-labelledby="heading131" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>1. Check the delete code in the comment on IR  box to understand the reason for delete and accordingly advise the caller</p>
+      <p>2. If it is listed as Hand To Do <b>(HTD)</b> which means callers needs to call WMT1 payroll. Client handles that particular order in house because of non availability of sort code <b>(this is for WMT1 only)</b></p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FWalmart%5FHand%5FTo%5FDo%2Edocx&action=view" class="badge badge-success">Smart Hub Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading132">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse132" aria-expanded="false" aria-controls="collapse132">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse132" class="collapse" aria-labelledby="heading132" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+        <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading133">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse133" aria-expanded="false" aria-controls="collapse133">
+          What number do we provide for a WGPS client, if an Employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse133" class="collapse" aria-labelledby="heading133" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+        <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+        <p><a href="https://adpworks.jiveon.com/community/service-411" class="badge badge-warning">WGPS Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading134">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse134" aria-expanded="false" aria-controls="collapse134">
+          Where can we check if the client accepts the OMB form ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse134" class="collapse" aria-labelledby="heading134" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+        <p>1. Go to WGRS</p>
+        <p>2. Click on Site id hyperlink </p>
+        <p>3. Client profile</p>
+        <p>4. Accept Non OMB forms </p>  
+        <p><a href="https://avsintra.avs.oneadp.com/WGSUI/home.html#/Mytasks">WGRS Link</a></p>
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!--Child Support Content Ends-->
+<!--Child Support Content Ends-->
+<div class="tab-pane fade" id="v-pills-NO3" role="tabpanel" aria-labelledby="v-pills-NO3-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading135">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse135" aria-expanded="false" aria-controls="collapse135">
+          Caller inquired on the order status and it is deleted status ( wondering why order was not set up) ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse135" class="collapse" aria-labelledby="heading135" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Check the delete code in the comment on IR  box to understand the reason for delete and accordingly advise the caller</p>
+      <p>2. If it is listed as Hand To Do <b>(HTD)</b> which means callers needs to call WMT1 payroll. Client handles that particular order in house because of non availability of sort code <b>(this is for WMT1 only)</b></p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FWalmart%5FHand%5FTo%5FDo%2Edocx&action=view" class="badge badge-success">Smart Hub Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading136">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse136" aria-expanded="false" aria-controls="collapse136">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse136" class="collapse" aria-labelledby="heading136" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+        <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading137">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse137" aria-expanded="false" aria-controls="collapse137">
+          What number do we provide for a WGPS client, if an Employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse137" class="collapse" aria-labelledby="heading137" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+        <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+        <p><a href="https://adpworks.jiveon.com/community/service-411" class="badge badge-warning">WGPS Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading138">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse138" aria-expanded="false" aria-controls="collapse138">
+          Employee asking when will the garnishment stop/ Am I already over deducted for my IRS tax levy.
+        </button>
+      </h2>
+    </div>
+    <div id="collapse138" class="collapse" aria-labelledby="heading138" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+        <p>There are two ways to process <b>IRS Order:</b></p>
+        <p>1. The goal amount is Keyed in the IR : This happens based on Client specification.. In this kind the deduction would automatically stop once the Goal amount is met </p>
+        <p>2. The goal amount is not keyed in the IR in this we would need release from the IRS to have the deduction stopped even when outstanding amount is satisfied</p>
+        <p><b>Path:</b> To check for which client we key goal amount GCPI - Search CPI - Site ID -  Tax Levy - Federal -  Federal and hit search. In the internal comment section it would be listed Ex:  FEX1 "Tax Levy:</p>  
+        <p>• Federal - Key the goal amount per the order. Effective 2/20/2014"</p>
+        <a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FFederal%5FTax%5FLevy%2Edocx&action=view" class="badge badge-info">SMART HUB LINK</a>
+        <a href="http://gcpi.es.ad.adp.com:9006/CPI.aspx" class="badge badge-warning">GCPI Link</a>
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!--Child Support Content Ends-->
+<!--Spousal Support Content Starts-->
+<div class="tab-pane fade" id="v-pills-NO4" role="tabpanel" aria-labelledby="v-pills-NO4-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading139">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse139" aria-expanded="false" aria-controls="collapse139">
+          Caller inquired on the order status and it is deleted status ( wondering why order was not set up) ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse139" class="collapse" aria-labelledby="heading139" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Check the delete code in the comment on IR  box to understand the reason for delete and accordingly advise the caller</p>
+      <p>2. If it is listed as Hand To Do <b>(HTD)</b> which means callers needs to call WMT1 payroll. Client handles that particular order in house because of non availability of sort code <b>(this is for WMT1 only)</b></p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FWalmart%5FHand%5FTo%5FDo%2Edocx&action=view" class="badge badge-success">Smart Hub Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading140">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse140" aria-expanded="false" aria-controls="collapse140">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse140" class="collapse" aria-labelledby="heading140" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+        <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading141">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse141" aria-expanded="false" aria-controls="collapse141">
+          What number do we provide for a WGPS client, if an Employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse141" class="collapse" aria-labelledby="heading141" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+        <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+        <p><a href="https://adpworks.jiveon.com/community/service-411" class="badge badge-warning">WGPS Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading142">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse142" aria-expanded="false" aria-controls="collapse142">
+          Does the Spousal support has to be in particular format 
+        </button>
+      </h2>
+    </div>
+    <div id="collapse142" class="collapse" aria-labelledby="heading142" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+        <p>No, spousal support can come in any format, OMB is applicable only for Child support </p>
+         <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FChild%5FSupport%5FProcedure%2Edocx&action=view">Smart Hub Link</a></p>
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!--Spousal Support Content Ends-->
+<!--State Tax Levy Content Ends-->
+<div class="tab-pane fade" id="v-pills-NO5" role="tabpanel" aria-labelledby="v-pills-NO5-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading143">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse143" aria-expanded="false" aria-controls="collapse143">
+          Caller inquired on the order status and it is deleted status ( wondering why order was not set up) ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse143" class="collapse" aria-labelledby="heading143" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Check the delete code in the comment on IR  box to understand the reason for delete and accordingly advise the caller</p>
+      <p>2. If it is listed as Hand To Do <b>(HTD)</b> which means callers needs to call WMT1 payroll. Client handles that particular order in house because of non availability of sort code <b>(this is for WMT1 only)</b></p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FWalmart%5FHand%5FTo%5FDo%2Edocx&action=view" class="badge badge-success">Smart Hub Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading144">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse144" aria-expanded="false" aria-controls="collapse144">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse144" class="collapse" aria-labelledby="heading144" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+        <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading145">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse145" aria-expanded="false" aria-controls="collapse145">
+          What number do we provide for a WGPS client, if an Employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse145" class="collapse" aria-labelledby="heading145" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+        <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+        <p><a href="https://adpworks.jiveon.com/community/service-411" class="badge badge-warning">WGPS Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading146">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse146" aria-expanded="false" aria-controls="collapse146">
+          How much will I be deducted for the taxes received from CA Franchise tax board 
+        </button>
+      </h2>
+    </div>
+    <div id="collapse146" class="collapse" aria-labelledby="heading146" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for California (CA)</button>
+      <p></p>
+        <p>You will be deducted for 25% of DI until paid in full</p>
+        <a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsState%20Procedures%2FCalifornia%5FTax%5FLevy%2Edocx&action=view" class="badge badge-info">SMART HUB LINK</a>
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!--State Tax Levy Content Ends-->
+<!--Student Loan Content Ends-->
+ <div class="tab-pane fade" id="v-pills-NO6" role="tabpanel" aria-labelledby="v-pills-NO6-tab">
+  <div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading147">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse147" aria-expanded="false" aria-controls="collapse147">
+          Caller inquired on the order status and it is deleted status ( wondering why order was not set up) ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse147" class="collapse" aria-labelledby="heading147" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for Federal and All-States</button>
+      <p></p>
+      <p>1. Check the delete code in the comment on IR  box to understand the reason for delete and accordingly advise the caller</p>
+      <p>2. If it is listed as Hand To Do <b>(HTD)</b> which means callers needs to call WMT1 payroll. Client handles that particular order in house because of non availability of sort code <b>(this is for WMT1 only)</b></p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FWalmart%5FHand%5FTo%5FDo%2Edocx&action=view" class="badge badge-success">Smart Hub Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading148">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse148" aria-expanded="false" aria-controls="collapse148">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse148" class="collapse" aria-labelledby="heading148" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal and All-States</button>
+      <p></p>
+        <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading149">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse149" aria-expanded="false" aria-controls="collapse149">
+          What number do we provide for a WGPS client, if an Employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse149" class="collapse" aria-labelledby="heading149" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal and All-States</button>
+      <p></p>
+        <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+        <p><a href="https://adpworks.jiveon.com/community/service-411" class="badge badge-warning">WGPS Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading150">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse150" aria-expanded="false" aria-controls="collapse150">
+          How much will I be deducted ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse150" class="collapse" aria-labelledby="heading150" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+        <p>You will be deducted for 15% of DI.</p>
+        <a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FStudent%5FLoan%5FProcedure%2Edocx&action=view">SMART HUB LINK</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading151">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse151" aria-expanded="false" aria-controls="collapse151">
+          Why the student loan is not issued by court ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse151" class="collapse" aria-labelledby="heading151" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+        <p>The Higher Education Act, (P.L 102-164; 20 U.S.C. § 1095a) authorizes the U.S. Department of Education (ED) as well as student loan guaranty agencies to collect defaulted federally financed student loans by means of an administrative order to the employer, and without the need for a court</p>
+        <a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FStudent%5FLoan%5FProcedure%2Edocx&action=view">SMART HUB LINK</a>
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!--Student Loan Content Ends-->
+<!--Wage Assignment Content Starts-->
+<div class="tab-pane fade" id="v-pills-NO7" role="tabpanel" aria-labelledby="v-pills-NO7-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading152">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse152" aria-expanded="false" aria-controls="collapse152">
+          Can employee set up Voluntary Wage Assignment to pay federal taxes?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse152" class="collapse" aria-labelledby="heading152" data-parent="#accordionExample">
+      <div class="card-body">
+      <p>1) First check GCPI to see client accepts IRS wage agreements or not.</p> 
+      <p>2) If its checked, then employee can send in 2159  form to have the deduction started.</p>
+      <p><b>Path: </b>Client profile -> Processing -> General - If the box is checked for IRS wage agreements</p>
+      <a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FWage%5FAssignment%2Edocx&action=view" class="badge badge-info">SMART HUB LINK</a>
+      <a href="http://gcpi.es.ad.adp.com:9006/ClientProfile.aspx" class="badge badge-warning">GCPI link</a>
+      <a href="https://www.irs.gov/pub/irs-pdf/f2159.pdf" class="badge badge-primary">Google Link</a>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+<!--Wage Assignment Content Ends-->
+<!--Writ Content Starts-->
+<div class="tab-pane fade" id="v-pills-NO8" role="tabpanel" aria-labelledby="v-pills-NO8-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading153">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse153" aria-expanded="false" aria-controls="collapse153">
+          Caller inquired on the order status and it is deleted status ( wondering why order was not set up) ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse153" class="collapse" aria-labelledby="heading153" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Check the delete code in the comment on IR  box to understand the reason for delete and accordingly advise the caller</p>
+      <p>2. If it is listed as Hand To Do <b>(HTD)</b> which means callers needs to call WMT1 payroll. Client handles that particular order in house because of non availability of sort code <b>(this is for WMT1 only)</b></p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FWalmart%5FHand%5FTo%5FDo%2Edocx&action=view" class="badge badge-success">Smart Hub Link</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading154">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse154" aria-expanded="false" aria-controls="collapse154">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse154" class="collapse" aria-labelledby="heading154" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+        <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading155">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse155" aria-expanded="false" aria-controls="collapse155">
+          What number do we provide for a WGPS client, if an Employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse155" class="collapse" aria-labelledby="heading155" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+        <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+        <p><a href="https://adpworks.jiveon.com/community/service-411" class="badge badge-warning">WGPS Link</a></p>
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!--Writ Content Ends-->
+    </div>
+  </div>
+</div>
+</div><!--Last Div for New Order Content-->
+<!--===================================================================New Order Content Ends ===================================================================================== -->
       <div class="tab-pane fade" id="content-refund" aria-labelledby="tab-refund" role="tabpanel">Refund content</div>
       <div class="tab-pane fade" id="content-release" aria-labelledby="tab-release" role="tabpanel">Release content</div>
     </div>
