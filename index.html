@@ -5139,7 +5139,1417 @@
 <main role="main" class="container-full">
   <div class="container-full">
     <div class="tab-content">
-      <div class="tab-pane fade show active" id="content-agencydeduction" aria-labelledby="tab-1" role="tabpanel">Deduction Content</div>
+<!-- Deduction Content Starts -->
+<div class="tab-pane fade show active" id="content-agencydeduction" aria-labelledby="tab-1" role="tabpanel">
+
+<div class="row">
+  <div class="col-2">
+    <p></p>
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-AD1-tab" data-toggle="pill" href="#v-pills-AD1" role="tab" aria-controls="v-pills-AD1" aria-selected="true">Bankruptcy</a>
+      <a class="nav-link" id="v-pills-AD2-tab" data-toggle="pill" href="#v-pills-AD2" role="tab" aria-controls="v-pills-AD2" aria-selected="false">Child Support</a>
+      <a class="nav-link" id="v-pills-AD3-tab" data-toggle="pill" href="#v-pills-AD3" role="tab" aria-controls="v-pills-AD3" aria-selected="false">Federal Tax Levy</a>
+      <a class="nav-link" id="v-pills-AD4-tab" data-toggle="pill" href="#v-pills-AD4" role="tab" aria-controls="v-pills-AD4" aria-selected="false">Spousal Support</a>
+      <a class="nav-link" id="v-pills-AD5-tab" data-toggle="pill" href="#v-pills-AD5" role="tab" aria-controls="v-pills-AD5" aria-selected="false">State Tax Levy</a>
+      <a class="nav-link" id="v-pills-AD6-tab" data-toggle="pill" href="#v-pills-AD6" role="tab" aria-controls="v-pills-AD6" aria-selected="false">Student Loan</a>
+      <a class="nav-link" id="v-pills-AD7-tab" data-toggle="pill" href="#v-pills-AD7" role="tab" aria-controls="v-pills-AD7" aria-selected="false">Writ</a>
+
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+<!-- Agency|Deduction|Bankruptcy Content Starts -->   
+<div class="tab-pane fade show active" id="v-pills-AD1" role="tabpanel" aria-labelledby="v-pills-AD1-tab">
+  <p></p>
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading225">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse225" aria-expanded="false" aria-controls="collapse225">
+          How do we identify it is a Parm linking issue and how to resolve it?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse225" class="collapse" aria-labelledby="heading225" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Check if the payment address matches in WGRS , USMM and order </p>
+      <p>2. If address is different in USMM than what is updated in WGRS - Raise child SR to Tech team  to fix the issue </p>
+      <p><b>Steps to check payee on USMM :</b></p>
+      <p>1. Double click on payee code </p>
+      <p>2. Double click on address line / Name 1</p>
+      <p>3. Match the address under Payee information  and agency address information </p>
+      <p><b>Path: </b>Queue to tech  :  -PYMT-AND-COMPL-OPS-SUPPORT</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading226">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse226" aria-expanded="false" aria-controls="collapse226">
+          Agency calls in for missing check and in USMM we see the check status is cashed and has been sent to correct address
+        </button>
+      </h2>
+    </div>
+    <div id="collapse226" class="collapse" aria-labelledby="heading226" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>We can give them the check #, date when the check was cashed if they request for the proof then we can request for the copy of cashed check and fax it to the agency/ Employee. Below are the steps to request for copy od cashed check: </p>
+      <p>Copy check# from FTS</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH </p>
+      <p>Account ID - Select -->WGD26</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from FTS EE Display Screen)</p>
+      <p>Execute(Top left Corner)</p>
+      <p>Select entire row</p>
+      <p>Click on "Check Copy" (top)</p>
+      <p>Select Billing as "NO"</p>
+      <p>Copy Medium will be "Email"</p>
+      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>Click Save (top)</p>
+      <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
+      <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading227">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse227" aria-expanded="false" aria-controls="collapse227">
+          How to check when the check was cashed ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse227" class="collapse" aria-labelledby="heading227" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Steps to check cashed date of the check </p>
+      <p>Copy check# from USMM</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH</p>
+      <p>Account ID - Select -->G32 WGD26 ( house bank and account ID can be obtained by selecting the row and clicking on Void in EE display screen)</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from USMM EE Display Screen)</p>
+      <p>Execute(Top left Corner) or HIT F8</p>
+      <p>In the next screen you find to whom the check was made payable to as well as when the check was cashed (changed on date)</p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FUs%5FMoney%5FMovement%5FPayment%5FManagement%2Edocx&action=view" class="badge badge-warning">SMARTHUB LINK</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading228">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse228" aria-expanded="false" aria-controls="collapse228">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse228" class="collapse" aria-labelledby="heading228" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading229">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse229" aria-expanded="false" aria-controls="collapse229">
+          What number do we provide for a WGPS client, if an employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse229" class="collapse" aria-labelledby="heading229" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading230">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse230" aria-expanded="false" aria-controls="collapse230">
+          Why are the payments not being sent or received  ?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse230" class="collapse" aria-labelledby="heading230" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Need to check FTS / USMM  to see if the employee is making enough</p>
+      <p>2. If he is making enough and we need to check the funds are being sent with a net due date need to check the clearing date ( Clear Val date )</p>
+      <p>3. Need to click on payment amount - Credit amount - Clearing data - Clearing Doc - Business partn. - Clearing data - Clear Val date</p>
+      <p>4. Also check payee code - if payment is sent to the correct address</p>
+      <p><b>Path: </b>FTS/USMM</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="heading231">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse231" aria-expanded="false" aria-controls="collapse231">
+          When employee is  making enough  and he is not getting dedcuted
+        </button>
+      </h2>
+    </div>
+    <div id="collapse231" class="collapse" aria-labelledby="heading231" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Check if the employer is tipped employer  . Eg - Darden </p>
+      <p>2. If not then need to refer the case to account manager to check why no deductions by creating a child SR.</p>
+      <p>3. Please keep the SR open and follow up every two days.</p>
+       </div>
+    </div>
+  </div>
+
+   <div class="card">
+    <div class="card-header" id="heading232">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse232" aria-expanded="false" aria-controls="collapse232">
+          Payments going to incorrect agency
+        </button>
+      </h2>
+    </div>
+    <div id="collapse232" class="collapse" aria-labelledby="heading232" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Need to verify if the payments address is matching in WGRS and FTS / USMM by double clicking on payee code ins USMM.</p>  
+      <p>2. If the payments don’t match in WGRS and FTS , please check the transmission date when the order was transmitted.</p>  
+      <p>3. If the address are not same , please refer to tech team as Parm linking issue and keep the funds on hold.</p>  
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!-- Agency|Deduction|Bankruptcy Content Ends -->
+<!-- Agency|Deduction|Child Support Content Starts -->
+<p></p>
+<div class="tab-pane fade" id="v-pills-AD2" role="tabpanel" aria-labelledby="v-pills-AD2-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading233">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse233" aria-expanded="false" aria-controls="collapse233">
+          How do we identify it is a Parm linking issue and how to resolve it?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse233" class="collapse" aria-labelledby="heading233" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Check if the payment address matches in WGRS , USMM and order </p>
+      <p>2. If address is different in USMM than what is updated in WGRS - Raise child SR to Tech team  to fix the issue </p>
+      <p><b>Steps to check payee on USMM :</b></p>
+      <p>1. Double click on payee code </p>
+      <p>2. Double click on address line / Name 1</p>
+      <p>3. Match the address under Payee information  and agency address information </p>
+      <p><b>Path: </b>Queue to tech  :  -PYMT-AND-COMPL-OPS-SUPPORT</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading243">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse243" aria-expanded="false" aria-controls="collapse243">
+          Agency calls in for missing check and in USMM we see the check status is cashed and has been sent to correct address
+        </button>
+      </h2>
+    </div>
+    <div id="collapse243" class="collapse" aria-labelledby="heading243" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>We can give them the check #, date when the check was cashed if they request for the proof then we can request for the copy of cashed check and fax it to the agency/ Employee. Below are the steps to request for copy od cashed check: </p>
+      <p>Copy check# from FTS</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH </p>
+      <p>Account ID - Select -->WGD26</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from FTS EE Display Screen)</p>
+      <p>Execute(Top left Corner)</p>
+      <p>Select entire row</p>
+      <p>Click on "Check Copy" (top)</p>
+      <p>Select Billing as "NO"</p>
+      <p>Copy Medium will be "Email"</p>
+      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>Click Save (top)</p>
+      <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
+      <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading242">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse242" aria-expanded="false" aria-controls="collapse242">
+          How to check when the check was cashed ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse242" class="collapse" aria-labelledby="heading242" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Steps to check cashed date of the check </p>
+      <p>Copy check# from USMM</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH</p>
+      <p>Account ID - Select -->G32 WGD26 ( house bank and account ID can be obtained by selecting the row and clicking on Void in EE display screen)</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from USMM EE Display Screen)</p>
+      <p>Execute(Top left Corner) or HIT F8</p>
+      <p>In the next screen you find to whom the check was made payable to as well as when the check was cashed (changed on date)</p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FUs%5FMoney%5FMovement%5FPayment%5FManagement%2Edocx&action=view" class="badge badge-warning">SMARTHUB LINK</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading235">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse235" aria-expanded="false" aria-controls="collapse235">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse235" class="collapse" aria-labelledby="heading235" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading236">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse236" aria-expanded="false" aria-controls="collapse236">
+          What number do we provide for a WGPS client, if an employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse236" class="collapse" aria-labelledby="heading236" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading237">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse237" aria-expanded="false" aria-controls="collapse237">
+          Why are the payments not being sent or received  ?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse237" class="collapse" aria-labelledby="heading237" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Need to check FTS / USMM  to see if the employee is making enough</p>
+      <p>2. If he is making enough and we need to check the funds are being sent with a net due date need to check the clearing date ( Clear Val date )</p>
+      <p>3. Need to click on payment amount - Credit amount - Clearing data - Clearing Doc - Business partn. - Clearing data - Clear Val date</p>
+      <p>4. Also check payee code - if payment is sent to the correct address</p>
+      <p><b>Path: </b>FTS/USMM</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="heading238">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse238" aria-expanded="false" aria-controls="collapse238">
+          When employee is  making enough  and he is not getting dedcuted
+        </button>
+      </h2>
+    </div>
+    <div id="collapse238" class="collapse" aria-labelledby="heading238" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Check if the employer is tipped employer  . Eg - Darden </p>
+      <p>2. If not then need to refer the case to account manager to check why no deductions by creating a child SR.</p>
+      <p>3. Please keep the SR open and follow up every two days.</p>
+       </div>
+    </div>
+  </div>
+
+   <div class="card">
+    <div class="card-header" id="heading239">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse239" aria-expanded="false" aria-controls="collapse239">
+          Payments going to incorrect agency
+        </button>
+      </h2>
+    </div>
+    <div id="collapse239" class="collapse" aria-labelledby="heading239" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Need to verify if the payments address is matching in WGRS and FTS / USMM by double clicking on payee code ins USMM.</p>  
+      <p>2. If the payments don’t match in WGRS and FTS , please check the transmission date when the order was transmitted.</p>  
+      <p>3. If the address are not same , please refer to tech team as Parm linking issue and keep the funds on hold.</p>  
+      </div>
+    </div>
+  </div>
+
+   <div class="card">
+    <div class="card-header" id="heading240">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse240" aria-expanded="false" aria-controls="collapse240">
+          What is the Max % that can be deducted for Child support ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse240" class="collapse" aria-labelledby="heading240" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Please Refer the child support order where the max % is mentioned.</p>  
+      <p>2. If the employee has Arrears the max can go up to 65 % as per the order .</p>  
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FChild%5FSupport%5FProcedure%2Edocx&action=view" class="badge badge-warning">SMART HUB LINK</a></p> 
+      </div>
+    </div>
+  </div>
+
+     <div class="card">
+    <div class="card-header" id="heading241">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse241" aria-expanded="false" aria-controls="collapse241">
+          How do we calculate when employee have Child support and Writ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse241" class="collapse" aria-labelledby="heading241" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Need to inform the caller when employee has a child support and any garnishment child support will take priority and the max deductions will be for 25 % </p>  
+      <p>2. For example if employee is paying more than 25% on DI for child support then there will not be any deduction in a writ case.</p>  
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!-- Agency|Deduction|Child Support Content Ends -->
+<!-- Agency|Deduction|Federal Tax Levy Content Starts -->
+<div class="tab-pane fade" id="v-pills-AD3" role="tabpanel" aria-labelledby="v-pills-AD3-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading250">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse250" aria-expanded="false" aria-controls="collapse250">
+          How do we identify it is a Parm linking issue and how to resolve it?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse250" class="collapse" aria-labelledby="heading250" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Check if the payment address matches in WGRS , USMM and order </p>
+      <p>2. If address is different in USMM than what is updated in WGRS - Raise child SR to Tech team  to fix the issue </p>
+      <p><b>Steps to check payee on USMM :</b></p>
+      <p>1. Double click on payee code </p>
+      <p>2. Double click on address line / Name 1</p>
+      <p>3. Match the address under Payee information  and agency address information </p>
+      <p><b>Path: </b>Queue to tech  :  -PYMT-AND-COMPL-OPS-SUPPORT</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading251">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse251" aria-expanded="false" aria-controls="collapse251">
+          Agency calls in for missing check and in USMM we see the check status is cashed and has been sent to correct address
+        </button>
+      </h2>
+    </div>
+    <div id="collapse251" class="collapse" aria-labelledby="heading251" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>We can give them the check #, date when the check was cashed if they request for the proof then we can request for the copy of cashed check and fax it to the agency/ Employee. Below are the steps to request for copy od cashed check: </p>
+      <p>Copy check# from FTS</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH </p>
+      <p>Account ID - Select -->WGD26</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from FTS EE Display Screen)</p>
+      <p>Execute(Top left Corner)</p>
+      <p>Select entire row</p>
+      <p>Click on "Check Copy" (top)</p>
+      <p>Select Billing as "NO"</p>
+      <p>Copy Medium will be "Email"</p>
+      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>Click Save (top)</p>
+      <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
+      <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading252">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse252" aria-expanded="false" aria-controls="collapse252">
+          How to check when the check was cashed ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse252" class="collapse" aria-labelledby="heading252" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Steps to check cashed date of the check </p>
+      <p>Copy check# from USMM</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH</p>
+      <p>Account ID - Select -->G32 WGD26 ( house bank and account ID can be obtained by selecting the row and clicking on Void in EE display screen)</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from USMM EE Display Screen)</p>
+      <p>Execute(Top left Corner) or HIT F8</p>
+      <p>In the next screen you find to whom the check was made payable to as well as when the check was cashed (changed on date)</p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FUs%5FMoney%5FMovement%5FPayment%5FManagement%2Edocx&action=view" class="badge badge-warning">SMARTHUB LINK</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading253">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse253" aria-expanded="false" aria-controls="collapse253">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse253" class="collapse" aria-labelledby="heading253" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading254">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse254" aria-expanded="false" aria-controls="collapse254">
+          What number do we provide for a WGPS client, if an employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse254" class="collapse" aria-labelledby="heading254" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading255">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse255" aria-expanded="false" aria-controls="collapse255">
+          Why are the payments not being sent or received  ?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse255" class="collapse" aria-labelledby="heading255" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Need to check FTS / USMM  to see if the employee is making enough</p>
+      <p>2. If he is making enough and we need to check the funds are being sent with a net due date need to check the clearing date ( Clear Val date )</p>
+      <p>3. Need to click on payment amount - Credit amount - Clearing data - Clearing Doc - Business partn. - Clearing data - Clear Val date</p>
+      <p>4. Also check payee code - if payment is sent to the correct address</p>
+      <p><b>Path: </b>FTS/USMM</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="heading256">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse256" aria-expanded="false" aria-controls="collapse256">
+          When employee is  making enough  and he is not getting dedcuted
+        </button>
+      </h2>
+    </div>
+    <div id="collapse256" class="collapse" aria-labelledby="heading256" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Check if the employer is tipped employer  . Eg - Darden </p>
+      <p>2. If not then need to refer the case to account manager to check why no deductions by creating a child SR.</p>
+      <p>3. Please keep the SR open and follow up every two days.</p>
+       </div>
+    </div>
+  </div>
+
+   <div class="card">
+    <div class="card-header" id="heading257">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse257" aria-expanded="false" aria-controls="collapse257">
+          Payments going to incorrect agency
+        </button>
+      </h2>
+    </div>
+    <div id="collapse257" class="collapse" aria-labelledby="heading257" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Need to verify if the payments address is matching in WGRS and FTS / USMM by double clicking on payee code ins USMM.</p>  
+      <p>2. If the payments don’t match in WGRS and FTS , please check the transmission date when the order was transmitted.</p>  
+      <p>3. If the address are not same , please refer to tech team as Parm linking issue and keep the funds on hold.</p>  
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!-- Agency|Deduction|Federal Tax Levy Content Ends -->    
+<!-- Agency|Deduction|Spousal Support Content Ends -->    
+<div class="tab-pane fade" id="v-pills-AD4" role="tabpanel" aria-labelledby="v-pills-AD4-tab">
+
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading258">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse258" aria-expanded="false" aria-controls="collapse258">
+          How do we identify it is a Parm linking issue and how to resolve it?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse258" class="collapse" aria-labelledby="heading258" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Check if the payment address matches in WGRS , USMM and order </p>
+      <p>2. If address is different in USMM than what is updated in WGRS - Raise child SR to Tech team  to fix the issue </p>
+      <p><b>Steps to check payee on USMM :</b></p>
+      <p>1. Double click on payee code </p>
+      <p>2. Double click on address line / Name 1</p>
+      <p>3. Match the address under Payee information  and agency address information </p>
+      <p><b>Path: </b>Queue to tech  :  -PYMT-AND-COMPL-OPS-SUPPORT</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading259">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse259" aria-expanded="false" aria-controls="collapse259">
+          Agency calls in for missing check and in USMM we see the check status is cashed and has been sent to correct address
+        </button>
+      </h2>
+    </div>
+    <div id="collapse259" class="collapse" aria-labelledby="heading259" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>We can give them the check #, date when the check was cashed if they request for the proof then we can request for the copy of cashed check and fax it to the agency/ Employee. Below are the steps to request for copy od cashed check: </p>
+      <p>Copy check# from FTS</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH </p>
+      <p>Account ID - Select -->WGD26</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from FTS EE Display Screen)</p>
+      <p>Execute(Top left Corner)</p>
+      <p>Select entire row</p>
+      <p>Click on "Check Copy" (top)</p>
+      <p>Select Billing as "NO"</p>
+      <p>Copy Medium will be "Email"</p>
+      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>Click Save (top)</p>
+      <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
+      <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading260">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse260" aria-expanded="false" aria-controls="collapse260">
+          How to check when the check was cashed ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse260" class="collapse" aria-labelledby="heading260" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Steps to check cashed date of the check </p>
+      <p>Copy check# from USMM</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH</p>
+      <p>Account ID - Select -->G32 WGD26 ( house bank and account ID can be obtained by selecting the row and clicking on Void in EE display screen)</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from USMM EE Display Screen)</p>
+      <p>Execute(Top left Corner) or HIT F8</p>
+      <p>In the next screen you find to whom the check was made payable to as well as when the check was cashed (changed on date)</p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FUs%5FMoney%5FMovement%5FPayment%5FManagement%2Edocx&action=view" class="badge badge-warning">SMARTHUB LINK</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading261">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse261" aria-expanded="false" aria-controls="collapse261">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse261" class="collapse" aria-labelledby="heading261" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading262">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse262" aria-expanded="false" aria-controls="collapse262">
+          What number do we provide for a WGPS client, if an employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse262" class="collapse" aria-labelledby="heading262" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading263">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse263" aria-expanded="false" aria-controls="collapse263">
+          Why are the payments not being sent or received  ?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse263" class="collapse" aria-labelledby="heading263" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Need to check FTS / USMM  to see if the employee is making enough</p>
+      <p>2. If he is making enough and we need to check the funds are being sent with a net due date need to check the clearing date ( Clear Val date )</p>
+      <p>3. Need to click on payment amount - Credit amount - Clearing data - Clearing Doc - Business partn. - Clearing data - Clear Val date</p>
+      <p>4. Also check payee code - if payment is sent to the correct address</p>
+      <p><b>Path: </b>FTS/USMM</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="heading264">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse264" aria-expanded="false" aria-controls="collapse264">
+          When employee is  making enough  and he is not getting dedcuted
+        </button>
+      </h2>
+    </div>
+    <div id="collapse264" class="collapse" aria-labelledby="heading264" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Check if the employer is tipped employer  . Eg - Darden </p>
+      <p>2. If not then need to refer the case to account manager to check why no deductions by creating a child SR.</p>
+      <p>3. Please keep the SR open and follow up every two days.</p>
+       </div>
+    </div>
+  </div>
+
+   <div class="card">
+    <div class="card-header" id="heading265">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse265" aria-expanded="false" aria-controls="collapse265">
+          Payments going to incorrect agency
+        </button>
+      </h2>
+    </div>
+    <div id="collapse265" class="collapse" aria-labelledby="heading265" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Need to verify if the payments address is matching in WGRS and FTS / USMM by double clicking on payee code ins USMM.</p>  
+      <p>2. If the payments don’t match in WGRS and FTS , please check the transmission date when the order was transmitted.</p>  
+      <p>3. If the address are not same , please refer to tech team as Parm linking issue and keep the funds on hold.</p>  
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!-- Agency|Deduction|Spousal Support Content Ends -->  
+<!-- Agency|Deduction|State Tax Content Starts -->  
+<div class="tab-pane fade" id="v-pills-AD5" role="tabpanel" aria-labelledby="v-pills-AD5-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading266">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse266" aria-expanded="false" aria-controls="collapse266">
+          How do we identify it is a Parm linking issue and how to resolve it?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse266" class="collapse" aria-labelledby="heading266" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Check if the payment address matches in WGRS , USMM and order </p>
+      <p>2. If address is different in USMM than what is updated in WGRS - Raise child SR to Tech team  to fix the issue </p>
+      <p><b>Steps to check payee on USMM :</b></p>
+      <p>1. Double click on payee code </p>
+      <p>2. Double click on address line / Name 1</p>
+      <p>3. Match the address under Payee information  and agency address information </p>
+      <p><b>Path: </b>Queue to tech  :  -PYMT-AND-COMPL-OPS-SUPPORT</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading267">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse267" aria-expanded="false" aria-controls="collapse267">
+          Agency calls in for missing check and in USMM we see the check status is cashed and has been sent to correct address
+        </button>
+      </h2>
+    </div>
+    <div id="collapse267" class="collapse" aria-labelledby="heading267" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>We can give them the check #, date when the check was cashed if they request for the proof then we can request for the copy of cashed check and fax it to the agency/ Employee. Below are the steps to request for copy od cashed check: </p>
+      <p>Copy check# from FTS</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH </p>
+      <p>Account ID - Select -->WGD26</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from FTS EE Display Screen)</p>
+      <p>Execute(Top left Corner)</p>
+      <p>Select entire row</p>
+      <p>Click on "Check Copy" (top)</p>
+      <p>Select Billing as "NO"</p>
+      <p>Copy Medium will be "Email"</p>
+      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>Click Save (top)</p>
+      <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
+      <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading268">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse268" aria-expanded="false" aria-controls="collapse268">
+          How to check when the check was cashed ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse268" class="collapse" aria-labelledby="heading268" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Steps to check cashed date of the check </p>
+      <p>Copy check# from USMM</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH</p>
+      <p>Account ID - Select -->G32 WGD26 ( house bank and account ID can be obtained by selecting the row and clicking on Void in EE display screen)</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from USMM EE Display Screen)</p>
+      <p>Execute(Top left Corner) or HIT F8</p>
+      <p>In the next screen you find to whom the check was made payable to as well as when the check was cashed (changed on date)</p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FUs%5FMoney%5FMovement%5FPayment%5FManagement%2Edocx&action=view" class="badge badge-warning">SMARTHUB LINK</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading269">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse269" aria-expanded="false" aria-controls="collapse269">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse269" class="collapse" aria-labelledby="heading269" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading270">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse270" aria-expanded="false" aria-controls="collapse270">
+          What number do we provide for a WGPS client, if an employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse270" class="collapse" aria-labelledby="heading270" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading271">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse271" aria-expanded="false" aria-controls="collapse271">
+          Why are the payments not being sent or received  ?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse271" class="collapse" aria-labelledby="heading271" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
+      <p></p>
+      <p>1. Need to check FTS / USMM  to see if the employee is making enough</p>
+      <p>2. If he is making enough and we need to check the funds are being sent with a net due date need to check the clearing date ( Clear Val date )</p>
+      <p>3. Need to click on payment amount - Credit amount - Clearing data - Clearing Doc - Business partn. - Clearing data - Clear Val date</p>
+      <p>4. Also check payee code - if payment is sent to the correct address</p>
+      <p><b>Path: </b>FTS/USMM</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="heading272">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse272" aria-expanded="false" aria-controls="collapse272">
+          When employee is  making enough  and he is not getting dedcuted
+        </button>
+      </h2>
+    </div>
+    <div id="collapse272" class="collapse" aria-labelledby="heading272" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Check if the employer is tipped employer  . Eg - Darden </p>
+      <p>2. If not then need to refer the case to account manager to check why no deductions by creating a child SR.</p>
+      <p>3. Please keep the SR open and follow up every two days.</p>
+       </div>
+    </div>
+  </div>
+
+   <div class="card">
+    <div class="card-header" id="heading273">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse273" aria-expanded="false" aria-controls="collapse273">
+          Payments going to incorrect agency
+        </button>
+      </h2>
+    </div>
+    <div id="collapse273" class="collapse" aria-labelledby="heading273" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
+      <p></p>
+      <p>1. Need to verify if the payments address is matching in WGRS and FTS / USMM by double clicking on payee code ins USMM.</p>  
+      <p>2. If the payments don’t match in WGRS and FTS , please check the transmission date when the order was transmitted.</p>  
+      <p>3. If the address are not same , please refer to tech team as Parm linking issue and keep the funds on hold.</p>  
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!-- Agency|Deduction|State Tax Content Ends -->  
+<!-- Agency|Deduction|Student Loan Content Ends -->  
+<div class="tab-pane fade" id="v-pills-AD6" role="tabpanel" aria-labelledby="v-pills-AD6-tab">
+
+  <div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading274">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse274" aria-expanded="false" aria-controls="collapse274">
+          How do we identify it is a Parm linking issue and how to resolve it?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse274" class="collapse" aria-labelledby="heading274" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for Federal and All States</button>
+      <p></p>
+      <p>1. Check if the payment address matches in WGRS , USMM and order </p>
+      <p>2. If address is different in USMM than what is updated in WGRS - Raise child SR to Tech team  to fix the issue </p>
+      <p><b>Steps to check payee on USMM :</b></p>
+      <p>1. Double click on payee code </p>
+      <p>2. Double click on address line / Name 1</p>
+      <p>3. Match the address under Payee information  and agency address information </p>
+      <p><b>Path: </b>Queue to tech  :  -PYMT-AND-COMPL-OPS-SUPPORT</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading275">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse275" aria-expanded="false" aria-controls="collapse275">
+          Agency calls in for missing check and in USMM we see the check status is cashed and has been sent to correct address
+        </button>
+      </h2>
+    </div>
+    <div id="collapse275" class="collapse" aria-labelledby="heading275" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal and All States</button>
+      <p></p>
+      <p>We can give them the check #, date when the check was cashed if they request for the proof then we can request for the copy of cashed check and fax it to the agency/ Employee. Below are the steps to request for copy od cashed check: </p>
+      <p>Copy check# from FTS</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH </p>
+      <p>Account ID - Select -->WGD26</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from FTS EE Display Screen)</p>
+      <p>Execute(Top left Corner)</p>
+      <p>Select entire row</p>
+      <p>Click on "Check Copy" (top)</p>
+      <p>Select Billing as "NO"</p>
+      <p>Copy Medium will be "Email"</p>
+      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>Click Save (top)</p>
+      <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
+      <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading276">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse276" aria-expanded="false" aria-controls="collapse276">
+          How to check when the check was cashed ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse276" class="collapse" aria-labelledby="heading276" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal and All States</button>
+      <p></p>
+      <p>Steps to check cashed date of the check </p>
+      <p>Copy check# from USMM</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH</p>
+      <p>Account ID - Select -->G32 WGD26 ( house bank and account ID can be obtained by selecting the row and clicking on Void in EE display screen)</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from USMM EE Display Screen)</p>
+      <p>Execute(Top left Corner) or HIT F8</p>
+      <p>In the next screen you find to whom the check was made payable to as well as when the check was cashed (changed on date)</p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FUs%5FMoney%5FMovement%5FPayment%5FManagement%2Edocx&action=view" class="badge badge-warning">SMARTHUB LINK</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading277">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse277" aria-expanded="false" aria-controls="collapse277">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse277" class="collapse" aria-labelledby="heading277" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal and All States</button>
+      <p></p>
+      <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading278">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse278" aria-expanded="false" aria-controls="collapse278">
+          What number do we provide for a WGPS client, if an employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse278" class="collapse" aria-labelledby="heading278" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal and All States</button>
+      <p></p>
+      <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading279">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse279" aria-expanded="false" aria-controls="collapse279">
+          Why are the payments not being sent or received  ?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse279" class="collapse" aria-labelledby="heading279" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal and All States</button>
+      <p></p>
+      <p>1. Need to check FTS / USMM  to see if the employee is making enough</p>
+      <p>2. If he is making enough and we need to check the funds are being sent with a net due date need to check the clearing date ( Clear Val date )</p>
+      <p>3. Need to click on payment amount - Credit amount - Clearing data - Clearing Doc - Business partn. - Clearing data - Clear Val date</p>
+      <p>4. Also check payee code - if payment is sent to the correct address</p>
+      <p><b>Path: </b>FTS/USMM</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="heading280">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse280" aria-expanded="false" aria-controls="collapse280">
+          When employee is  making enough  and he is not getting dedcuted
+        </button>
+      </h2>
+    </div>
+    <div id="collapse280" class="collapse" aria-labelledby="heading280" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal and All States</button>
+      <p></p>
+      <p>1. Check if the employer is tipped employer  . Eg - Darden </p>
+      <p>2. If not then need to refer the case to account manager to check why no deductions by creating a child SR.</p>
+      <p>3. Please keep the SR open and follow up every two days.</p>
+       </div>
+    </div>
+  </div>
+
+   <div class="card">
+    <div class="card-header" id="heading281">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse281" aria-expanded="false" aria-controls="collapse281">
+          Payments going to incorrect agency
+        </button>
+      </h2>
+    </div>
+    <div id="collapse281" class="collapse" aria-labelledby="heading281" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Federal and All States</button>
+      <p></p>
+      <p>1. Need to verify if the payments address is matching in WGRS and FTS / USMM by double clicking on payee code ins USMM.</p>  
+      <p>2. If the payments don’t match in WGRS and FTS , please check the transmission date when the order was transmitted.</p>  
+      <p>3. If the address are not same , please refer to tech team as Parm linking issue and keep the funds on hold.</p>  
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!-- Agency|Deduction|Student Loan Content Ends -->  
+<!-- Agency|Deduction|Writ Content Starts -->  
+<div class="tab-pane fade" id="v-pills-AD7" role="tabpanel" aria-labelledby="v-pills-AD7-tab">
+<div class="accordion" id="accordionExample">
+   <div class="card">
+    <div class="card-header" id="heading282">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse282" aria-expanded="false" aria-controls="collapse282">
+          How do we identify it is a Parm linking issue and how to resolve it?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse282" class="collapse" aria-labelledby="heading282" data-parent="#accordionExample">
+      <div class="card-body">
+
+      <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>1. Check if the payment address matches in WGRS , USMM and order </p>
+      <p>2. If address is different in USMM than what is updated in WGRS - Raise child SR to Tech team  to fix the issue </p>
+      <p><b>Steps to check payee on USMM :</b></p>
+      <p>1. Double click on payee code </p>
+      <p>2. Double click on address line / Name 1</p>
+      <p>3. Match the address under Payee information  and agency address information </p>
+      <p><b>Path: </b>Queue to tech  :  -PYMT-AND-COMPL-OPS-SUPPORT</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading283">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse283" aria-expanded="false" aria-controls="collapse283">
+          Agency calls in for missing check and in USMM we see the check status is cashed and has been sent to correct address
+        </button>
+      </h2>
+    </div>
+    <div id="collapse283" class="collapse" aria-labelledby="heading283" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>We can give them the check #, date when the check was cashed if they request for the proof then we can request for the copy of cashed check and fax it to the agency/ Employee. Below are the steps to request for copy od cashed check: </p>
+      <p>Copy check# from FTS</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH </p>
+      <p>Account ID - Select -->WGD26</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from FTS EE Display Screen)</p>
+      <p>Execute(Top left Corner)</p>
+      <p>Select entire row</p>
+      <p>Click on "Check Copy" (top)</p>
+      <p>Select Billing as "NO"</p>
+      <p>Copy Medium will be "Email"</p>
+      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>Click Save (top)</p>
+      <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
+      <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading284">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse284" aria-expanded="false" aria-controls="collapse284">
+          How to check when the check was cashed ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse284" class="collapse" aria-labelledby="heading284" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>Steps to check cashed date of the check </p>
+      <p>Copy check# from USMM</p>
+      <p>(Top) Start New Session</p>
+      <p>Custom Check Inq Transaction</p>
+      <p>Business Unit - Select --> San Dimas T&FS</p>
+      <p>House Bank - Select --> BK1OH</p>
+      <p>Account ID - Select -->G32 WGD26 ( house bank and account ID can be obtained by selecting the row and clicking on Void in EE display screen)</p>
+      <p>Check Status - Select --> B</p>
+      <p>Check Number - Copy Check # (from USMM EE Display Screen)</p>
+      <p>Execute(Top left Corner) or HIT F8</p>
+      <p>In the next screen you find to whom the check was made payable to as well as when the check was cashed (changed on date)</p>
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FUs%5FMoney%5FMovement%5FPayment%5FManagement%2Edocx&action=view" class="badge badge-warning">SMARTHUB LINK</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading285">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse285" aria-expanded="false" aria-controls="collapse285">
+          How to identify WGPS Client?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse285" class="collapse" aria-labelledby="heading285" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>If site ID does not show up in GCPI under client profile then it’s a WGPS client</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading286">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse286" aria-expanded="false" aria-controls="collapse286">
+          What number do we provide for a WGPS client, if an employer Calls in ?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse286" class="collapse" aria-labelledby="heading286" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>Take the branch code from USMM and filter the same on regions website and provide the phone number only to Employers</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading287">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse287" aria-expanded="false" aria-controls="collapse287">
+          Why are the payments not being sent or received  ?  
+        </button>
+      </h2>
+    </div>
+    <div id="collapse287" class="collapse" aria-labelledby="heading287" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>1. Need to check FTS / USMM  to see if the employee is making enough</p>
+      <p>2. If he is making enough and we need to check the funds are being sent with a net due date need to check the clearing date ( Clear Val date )</p>
+      <p>3. Need to click on payment amount - Credit amount - Clearing data - Clearing Doc - Business partn. - Clearing data - Clear Val date</p>
+      <p>4. Also check payee code - if payment is sent to the correct address</p>
+      <p><b>Path: </b>FTS/USMM</p>
+      </div>
+    </div>
+  </div>
+
+ <div class="card">
+    <div class="card-header" id="heading288">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse288" aria-expanded="false" aria-controls="collapse288">
+          When employee is  making enough  and he is not getting dedcuted
+        </button>
+      </h2>
+    </div>
+    <div id="collapse288" class="collapse" aria-labelledby="heading288" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>1. Check if the employer is tipped employer  . Eg - Darden </p>
+      <p>2. If not then need to refer the case to account manager to check why no deductions by creating a child SR.</p>
+      <p>3. Please keep the SR open and follow up every two days.</p>
+       </div>
+    </div>
+  </div>
+
+   <div class="card">
+    <div class="card-header" id="heading289">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse289" aria-expanded="false" aria-controls="collapse289">
+          Payments going to incorrect agency
+        </button>
+      </h2>
+    </div>
+    <div id="collapse289" class="collapse" aria-labelledby="heading289" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>1. Need to verify if the payments address is matching in WGRS and FTS / USMM by double clicking on payee code ins USMM.</p>  
+      <p>2. If the payments don’t match in WGRS and FTS , please check the transmission date when the order was transmitted.</p>  
+      <p>3. If the address are not same , please refer to tech team as Parm linking issue and keep the funds on hold.</p>  
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading290">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse290" aria-expanded="false" aria-controls="collapse290">
+          Do we need OTP to release funds in the state of Mississippi?
+        </button>
+      </h2>
+    </div>
+    <div id="collapse290" class="collapse" aria-labelledby="heading290" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>1.  In the state of MS funds get released to agency once Goal amount is met. (Ops set up a tickler to monitor it)</p>  
+      <p>2. If Agency requests to send funds before GA is met then we need OTP to release funds</p>  
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/Search/Pages/wg_results.aspx?k=WA%20WRIT#k=MS%20writ" class="badge badge-warning">SMART HUB LINK</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading291">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse291" aria-expanded="false" aria-controls="collapse291">
+          How do we calculate when employee have Child support and Writ?
+        </button>
+      </h2>
+  </div>
+    <div id="collapse291" class="collapse" aria-labelledby="heading291" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for All States</button>
+      <p></p>
+      <p>1. Need to inform the caller when employee has a child support and any garnishment child support will take priority and the max deductions will be for 25 % </p>  
+      <p>2. For example if employee is paying more than 25% on DI for child support then there will not be any deduction in a writ case.</p>  
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsOperations%2FChild%5FSupport%5FProcedure%2Edocx&action=view" class="badge badge-info">SMART HUB LINK</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="heading292">
+      <h2 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse292" aria-expanded="false" aria-controls="collapse292">
+          Michigan Order to pay
+        </button>
+      </h2>
+    </div>
+    <div id="collapse292" class="collapse" aria-labelledby="heading292" data-parent="#accordionExample">
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-danger">Applicable for Michigan (MI)</button>
+      <p></p>
+      <p>1. For the state of Michigan the funds should be released after 30 days of the start date in WGRS, if no objection letter received from employee.</p>  
+      <p>2 .Please put a change request for OPS to have the funds released.</p>  
+      <p><a href="http://apps.adpcorp.com/sites/SmartHub/wg/_layouts/15/WopiFrame2.aspx?sourcedoc=%2Fsites%2FSmartHub%2Fwg%2FDocumentsState%20Procedures%2FMichigan%5FWrit%5FOf%5FGarnishment%2Edocx&action=view" class="badge badge-warning">SMART HUB LINK</a></p>  
+      </div>
+    </div>
+  </div>
+</div><!--Last Div -->
+</div>
+<!-- Agency|Deduction|Writ Content Ends -->  
+</div>
+</div>
+</div>
+</div><!-- Last DIV for deduction-->
+<!-- Deduction Content Ends -->
+
       <div class="tab-pane fade" id="content-notifications" aria-labelledby="tab-notifications" role="tabpanel">Notification Content</div>
       <div class="tab-pane fade" id="content-agencygarnishments" aria-labelledby="tab-agencygarnishments" role="tabpanel">Garnishment content</div>
       <div class="tab-pane fade" id="content-agencyneworder" aria-labelledby="tab-agencyneworder" role="tabpanel">New Order content</div>
