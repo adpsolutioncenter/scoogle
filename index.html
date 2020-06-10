@@ -2,14 +2,134 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Scoogle</title>
-  </head>
+<title>Scoogle</title>
+<!-- CSS Definition Starts -->  
+<style type="text/css">
+body{margin-top:20px;}
+.timeline {
+    border-left: 3px solid #727cf5;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(114, 124, 245, 0.09);
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px #727cf5;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #727cf5;
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
+
+</style>
+<!-- CSS Definition Ends -->  
+</head>
   <body>
   
 <!-- Navbar Starts -->  
@@ -26,7 +146,8 @@
     <a class="nav-item nav-link active" id="nav-employee-tab" data-toggle="tab" href="#nav-employee" role="tab" aria-controls="nav-employee" aria-selected="true">Employee</a>
     <a class="nav-item nav-link" id="nav-agency-tab" data-toggle="tab" href="#nav-agency" role="tab" aria-controls="nav-agency" aria-selected="false">Agency</a>
     <a class="nav-item nav-link" id="nav-custodial-tab" data-toggle="tab" href="#nav-custodial" role="tab" aria-controls="nav-custodial" aria-selected="false">Custodial Parent</a>
-  </div>
+    <a class="nav-item nav-link" id="nav-update-tab" data-toggle="tab" href="#nav-update" role="tab" aria-controls="nav-update" aria-selected="false">Process Updates</a>
+   </div>
 </nav>
 <div class="tab-content" id="nav-tabContent">
 <p></p>
@@ -65,7 +186,7 @@
   <li>Case ID -  Exception - Last Deducted amount/ Approximate last deducted amount / Creditor Info - Type of garnishment</li>
   <p></p>
   <b>Note: If the caller is not completely verified then only provide limited info : 
-    <div>a) Agency Contact information</div>  
+    <div>a) Agency update information</div>  
     <div>b) Fax# & mailing address</b></div>
 </ol>        
 
@@ -2342,8 +2463,8 @@
       <div class="card-body">
 
      <p><b>Who are Money Movement Client's ?</b></p>
-      <p><b>Ans.</b> They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b> They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -2411,8 +2532,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -2485,8 +2606,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -2558,8 +2679,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -2631,8 +2752,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -2707,8 +2828,8 @@
   </div>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -2783,8 +2904,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -3467,7 +3588,7 @@
       <p>There are 2 ways to check for refund:</p>
       <p>Do we have release or modification on file</p>
       <p>If yes , we can initiate refund for the pending funds based on modification or release after checking employers refund policy in GCPI (Provide Refund Policy)</p>
-      <p>If there are no funds in pending status then Employee needs to contact agency requesting refund</p>
+      <p>If there are no funds in pending status then Employee needs to update agency requesting refund</p>
       <p>Provide agencies Phone#</p>
       <p><b>Path: </b>GCPI - Client CPMOD2 - select correct ID based on USMM -  Processing   - refund instructions</p>
       <p><a href="http://gcpi.es.ad.adp.com:9006/ClientCPMOD2.aspx">GCPI LINK</a></p>
@@ -3605,7 +3726,7 @@
       <p>There are 2 ways to check for refund:</p>
       <p>Do we have release or modification on file</p>
       <p>If yes , we can initiate refund for the pending funds based on modification or release after checking employers refund policy in GCPI (Provide Refund Policy)</p>
-      <p>If there are no funds in pending status then Employee needs to contact agency requesting refund</p>
+      <p>If there are no funds in pending status then Employee needs to update agency requesting refund</p>
       <p>Provide agencies Phone#</p>
       <p><b>Path: </b>GCPI - Client CPMOD2 - select correct ID based on USMM -  Processing   - refund instructions</p>
       <p><a href="http://gcpi.es.ad.adp.com:9006/ClientCPMOD2.aspx">GCPI LINK</a></p>
@@ -3744,7 +3865,7 @@
       <p>There are 2 ways to check for refund:</p>
       <p>Do we have release or modification on file</p>
       <p>If yes , we can initiate refund for the pending funds based on modification or release after checking employers refund policy in GCPI (Provide Refund Policy)</p>
-      <p>If there are no funds in pending status then Employee needs to contact agency requesting refund</p>
+      <p>If there are no funds in pending status then Employee needs to update agency requesting refund</p>
       <p>Provide agencies Phone#</p>
       <p><b>Path: </b>GCPI - Client CPMOD2 - select correct ID based on USMM -  Processing   - refund instructions</p>
       <p><a href="http://gcpi.es.ad.adp.com:9006/ClientCPMOD2.aspx">GCPI LINK</a></p>
@@ -3882,7 +4003,7 @@
       <p>There are 2 ways to check for refund:</p>
       <p>Do we have release or modification on file</p>
       <p>If yes , we can initiate refund for the pending funds based on modification or release after checking employers refund policy in GCPI (Provide Refund Policy)</p>
-      <p>If there are no funds in pending status then Employee needs to contact agency requesting refund</p>
+      <p>If there are no funds in pending status then Employee needs to update agency requesting refund</p>
       <p>Provide agencies Phone#</p>
       <p><b>Path: </b>GCPI - Client CPMOD2 - select correct ID based on USMM -  Processing   - refund instructions</p>
       <p><a href="http://gcpi.es.ad.adp.com:9006/ClientCPMOD2.aspx">GCPI LINK</a></p>
@@ -4021,7 +4142,7 @@
       <p>There are 2 ways to check for refund:</p>
       <p>Do we have release or modification on file</p>
       <p>If yes , we can initiate refund for the pending funds based on modification or release after checking employers refund policy in GCPI (Provide Refund Policy)</p>
-      <p>If there are no funds in pending status then Employee needs to contact agency requesting refund</p>
+      <p>If there are no funds in pending status then Employee needs to update agency requesting refund</p>
       <p>Provide agencies Phone#</p>
       <p><b>Path: </b>GCPI - Client CPMOD2 - select correct ID based on USMM -  Processing   - refund instructions</p>
       <p><a href="http://gcpi.es.ad.adp.com:9006/ClientCPMOD2.aspx">GCPI LINK</a></p>
@@ -4159,7 +4280,7 @@
       <p>There are 2 ways to check for refund:</p>
       <p>Do we have release or modification on file</p>
       <p>If yes , we can initiate refund for the pending funds based on modification or release after checking employers refund policy in GCPI (Provide Refund Policy)</p>
-      <p>If there are no funds in pending status then Employee needs to contact agency requesting refund</p>
+      <p>If there are no funds in pending status then Employee needs to update agency requesting refund</p>
       <p>Provide agencies Phone#</p>
       <p><b>Path: </b>GCPI - Client CPMOD2 - select correct ID based on USMM -  Processing   - refund instructions</p>
       <p><a href="http://gcpi.es.ad.adp.com:9006/ClientCPMOD2.aspx">GCPI LINK</a></p>
@@ -4296,7 +4417,7 @@
       <p>There are 2 ways to check for refund:</p>
       <p>Do we have release or modification on file</p>
       <p>If yes , we can initiate refund for the pending funds based on modification or release after checking employers refund policy in GCPI (Provide Refund Policy)</p>
-      <p>If there are no funds in pending status then Employee needs to contact agency requesting refund</p>
+      <p>If there are no funds in pending status then Employee needs to update agency requesting refund</p>
       <p>Provide agencies Phone#</p>
       <p><b>Path: </b>GCPI - Client CPMOD2 - select correct ID based on USMM -  Processing   - refund instructions</p>
       <p><a href="http://gcpi.es.ad.adp.com:9006/ClientCPMOD2.aspx">GCPI LINK</a></p>
@@ -4326,7 +4447,7 @@
       <p>There are 2 ways to check for refund:</p>
       <p>Do we have release or modification on file</p>
       <p>If yes , we can initiate refund for the pending funds based on modification or release after checking employers refund policy in GCPI (Provide Refund Policy)</p>
-      <p>If there are no funds in pending status then Employee needs to contact agency requesting refund</p>
+      <p>If there are no funds in pending status then Employee needs to update agency requesting refund</p>
       <p>Provide agencies Phone#</p>
       <p><b>Path: </b>GCPI - Client CPMOD2 - select correct ID based on USMM -  Processing   - refund instructions</p>
       <p><a href="http://gcpi.es.ad.adp.com:9006/ClientCPMOD2.aspx">GCPI LINK</a></p>
@@ -4624,7 +4745,7 @@
       <div class="card-body">
         <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
       <p></p>
-      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to contact agency and have them send us the release or balance update if any.</p>
+      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to update agency and have them send us the release or balance update if any.</p>
       <p>2) Mode of sending doc : MYADP upload if EE has a copy (release addressed to ER and not payment receipt) or email : wagegarnishments@ADP.com or fax#  909 or dedicated fax line </p>
       </div>
     </div>
@@ -4789,7 +4910,7 @@
       <div class="card-body">
         <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
       <p></p>
-      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to contact agency and have them send us the release or balance update if any.</p>
+      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to update agency and have them send us the release or balance update if any.</p>
       <p>2) Mode of sending doc : MYADP upload if EE has a copy (release addressed to ER and not payment receipt) or email : wagegarnishments@ADP.com or fax#  909 or dedicated fax line </p>
       </div>
     </div>
@@ -4832,7 +4953,7 @@
       <div class="card-body">
         <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
       <p></p>
-      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to contact agency and have them send us the release or balance update if any.</p>
+      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to update agency and have them send us the release or balance update if any.</p>
       <p>2) Mode of sending doc : MYADP upload if EE has a copy (release addressed to ER and not payment receipt) or email : wagegarnishments@ADP.com or fax#  909 or dedicated fax line </p>
       </div>
     </div>
@@ -4875,7 +4996,7 @@
       <div class="card-body">
         <button type="button" class="btn btn-outline-danger">Applicable for All-States and Federal</button>
       <p></p>
-      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to contact agency and have them send us the release or balance update if any.</p>
+      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to update agency and have them send us the release or balance update if any.</p>
       <p>2) Mode of sending doc : MYADP upload if EE has a copy (release addressed to ER and not payment receipt) or email : wagegarnishments@ADP.com or fax#  909 or dedicated fax line </p>
       </div>
     </div>
@@ -4985,7 +5106,7 @@
       <div class="card-body">
         <button type="button" class="btn btn-outline-danger">Applicable for All-States</button>
       <p></p>
-      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to contact agency and have them send us the release or balance update if any.</p>
+      <p>1) As the payment was made other than Wage Garnishment deduction, we would not have a track hence employee needs to update agency and have them send us the release or balance update if any.</p>
       <p>2) Mode of sending doc : MYADP upload if EE has a copy (release addressed to ER and not payment receipt) or email : wagegarnishments@ADP.com or fax#  909 or dedicated fax line </p>
       </div>
     </div>
@@ -5085,7 +5206,7 @@
   <li>For Bankruptcy Trustee or Attorney - Bankruptcy Case ID  listed in PACER or the current active case ID is mandate</li>
   <p></p>
   <b>Note: If the caller is not completely verified then only provide limited info : 
-    <div>a) Agency Contact information</div>  
+    <div>a) Agency update information</div>  
     <div>b) Fax# & mailing address</b></div>
 </ol>        
 
@@ -5212,7 +5333,7 @@
       <p>Click on "Check Copy" (top)</p>
       <p>Select Billing as "NO"</p>
       <p>Copy Medium will be "Email"</p>
-      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>In the update Info tab fill in your name and E-mail id</p>
       <p>Click Save (top)</p>
       <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
       <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
@@ -5397,7 +5518,7 @@
       <p>Click on "Check Copy" (top)</p>
       <p>Select Billing as "NO"</p>
       <p>Copy Medium will be "Email"</p>
-      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>In the update Info tab fill in your name and E-mail id</p>
       <p>Click Save (top)</p>
       <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
       <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
@@ -5618,7 +5739,7 @@
       <p>Click on "Check Copy" (top)</p>
       <p>Select Billing as "NO"</p>
       <p>Copy Medium will be "Email"</p>
-      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>In the update Info tab fill in your name and E-mail id</p>
       <p>Click Save (top)</p>
       <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
       <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
@@ -5803,7 +5924,7 @@
       <p>Click on "Check Copy" (top)</p>
       <p>Select Billing as "NO"</p>
       <p>Copy Medium will be "Email"</p>
-      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>In the update Info tab fill in your name and E-mail id</p>
       <p>Click Save (top)</p>
       <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
       <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
@@ -5987,7 +6108,7 @@
       <p>Click on "Check Copy" (top)</p>
       <p>Select Billing as "NO"</p>
       <p>Copy Medium will be "Email"</p>
-      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>In the update Info tab fill in your name and E-mail id</p>
       <p>Click Save (top)</p>
       <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
       <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
@@ -6172,7 +6293,7 @@
       <p>Click on "Check Copy" (top)</p>
       <p>Select Billing as "NO"</p>
       <p>Copy Medium will be "Email"</p>
-      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>In the update Info tab fill in your name and E-mail id</p>
       <p>Click Save (top)</p>
       <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
       <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
@@ -6356,7 +6477,7 @@
       <p>Click on "Check Copy" (top)</p>
       <p>Select Billing as "NO"</p>
       <p>Copy Medium will be "Email"</p>
-      <p>In the Contact Info tab fill in your name and E-mail id</p>
+      <p>In the update Info tab fill in your name and E-mail id</p>
       <p>Click Save (top)</p>
       <p><b>Note: </b>SLA for check copies is 24-48 hours. Keep your SR open, once received attach it in a SD tab and fax it to the agency/ Employee as promised </p>
       <p><b>Path: </b>USMM  - from your favorites click on Custom check Inq transaction </p>
@@ -6799,8 +6920,8 @@
       <p></p>
       <p>Quest. Who are Money Movement Client's?</p>
       <p>Ans. They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses</p>
-      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path: </b>GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path: </b>GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -6873,8 +6994,8 @@
       <p></p>
       <p>Quest. Who are Money Movement Client's?</p>
       <p>Ans. They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses</p>
-      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path: </b>GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path: </b>GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -6947,8 +7068,8 @@
       <p></p>
       <p>Quest. Who are Money Movement Client's?</p>
       <p>Ans. They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses</p>
-      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path: </b>GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path: </b>GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -7021,8 +7142,8 @@
       <p></p>
       <p>Quest. Who are Money Movement Client's?</p>
       <p>Ans. They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses</p>
-      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path: </b>GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path: </b>GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -7096,8 +7217,8 @@
       <p></p>
       <p>Quest. Who are Money Movement Client's?</p>
       <p>Ans. They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses</p>
-      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path: </b>GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path: </b>GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -7170,8 +7291,8 @@
       <p></p>
       <p>Quest. Who are Money Movement Client's?</p>
       <p>Ans. They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses</p>
-      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path: </b>GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path: </b>GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -7244,8 +7365,8 @@
       <p></p>
       <p>Quest. Who are Money Movement Client's?</p>
       <p>Ans. They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses</p>
-      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path: </b>GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p>In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path: </b>GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -8716,7 +8837,7 @@
   <li>Caller's Name & Phone# - CP or Ex-spouse</li>
   <p></p>
   <b>Note: If the caller is not completely verified then only provide limited info : 
-    <div>a) custodial Contact information</div>  
+    <div>a) custodial update information</div>  
     <div>b) Fax# & mailing address</b></div>
 </ol>        
 
@@ -10126,7 +10247,7 @@
 
       <button type="button" class="btn btn-outline-danger">Applicable All States</button>
       <p></p>
-      <p> The DD can be set up only if the payments are going to the CP directly.  If its going to the SDU then CP needs to contact the SDU for DD
+      <p> The DD can be set up only if the payments are going to the CP directly.  If its going to the SDU then CP needs to update the SDU for DD
  During the 1st payment through check DD cannot be setup.</p>
       <p>Open DD form from Smart hub and fax the form to CP</p>
       <p>Guide the CP/Ex spouse on the call as all the fields needs to be filled by CP. We need to pro actively provide File#, BR/CO code, Case# as mentioned on our records</p>
@@ -10197,7 +10318,7 @@
 
       <button type="button" class="btn btn-outline-danger">Applicable All States</button>
       <p></p>
-      <p> The DD can be set up only if the payments are going to the CP directly.  If its going to the SDU then CP needs to contact the SDU for DD
+      <p> The DD can be set up only if the payments are going to the CP directly.  If its going to the SDU then CP needs to update the SDU for DD
  During the 1st payment through check DD cannot be setup.</p>
       <p>Open DD form from Smart hub and fax the form to CP</p>
       <p>Guide the CP/Ex spouse on the call as all the fields needs to be filled by CP. We need to pro actively provide File#, BR/CO code, Case# as mentioned on our records</p>
@@ -10292,8 +10413,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -10366,8 +10487,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -10439,8 +10560,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for Federal</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -10512,8 +10633,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -10586,8 +10707,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -10660,8 +10781,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States and Federal</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -10734,8 +10855,8 @@
       <button type="button" class="btn btn-outline-danger">Applicable for ALL-States</button>
       <p></p>
       <p><b>Who are Money Movement Client's?</b></p>
-      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary contacts listed on GCPI for the specific client (Name that is checked under primary contact list)</p>
-      <p><b>Path:</b> GCPI -> Client CPMOD2-> Contacts -> Contact Information</p>
+      <p><b>Ans.</b>They are the type of clients for whom, we only handle disbursements i.e.; payments & Notification related to disbursements. Ex. Check responses. In case caller has any order / balance related questions. We need to refer the caller to the primary updates listed on GCPI for the specific client (Name that is checked under primary update list)</p>
+      <p><b>Path:</b> GCPI -> Client CPMOD2-> updates -> update Information</p>
       </div>
     </div>
   </div>
@@ -11559,6 +11680,43 @@
 <!-- Navbar with Nav Pills Ends -->
 </div>
 <!-- ==========================================Custodial Content Ends =======================================================================================-->
+<!-- ==========================================Process Updates Content Starts =======================================================================================-->
+<div class="tab-pane fade" id="nav-update" role="tabpanel" aria-labelledby="nav-update-tab">
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Solution Center Process Updates</h5>
+                    <div id="content">
+                        <ul class="timeline">
+                            <li class="event" data-date="10th June 2020">
+                                <h3>Process Update 1</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            </li>
+                            <li class="event" data-date="9th June 2020">
+                                <h3>Process Update 2</h3>
+                                <p>It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.</p>
+                            </li>
+                            <li class="event" data-date="5th June 2020">
+                                <h3>Process Update 3</h3>
+                                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </li>
+                            <li class="event" data-date="4th June 2020">
+                                <h3>Process Update 4</h3>
+                                <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div><!-- Last Div for Updates -->
+<!-- ==========================================Process Updates Content Ends =======================================================================================-->
 </div>
 
 
